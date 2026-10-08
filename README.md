@@ -10,7 +10,8 @@
 [![No Dependencies](https://img.shields.io/badge/dependencies-none-success?style=flat-square)](#-tech-stack)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
-[English](README.md) · [Русский](README.ru.md)
+[![English](https://img.shields.io/badge/lang-English-blue?style=flat-square)](README.md)
+[![Русский](https://img.shields.io/badge/lang-Русский-red?style=flat-square)](README.ru.md)
 
 </div>
 
