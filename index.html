@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dragon's Dogma 2 — Full Walkthrough (No Missables)</title>
+<meta content="Complete Dragon's Dogma 2 walkthrough: every main and side quest in order, timers, branching, points of no return, Sphinx riddles and a 100% checklist." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="mobile-topbar">
+<div class="brand">DD2 · Walkthrough</div>
+<div class="m-progress"><span data-i18n="ui.done">Done:</span> <b id="mDone">0</b>/<span id="mTotal">0</span></div>
+<button class="burger" data-i18n="ui.menu" id="burger">Menu</button>
+</div>
+<div class="shell">
+<nav class="sidebar" id="sidebar">
+<div class="brand">Dragon's Dogma II</div>
+<div class="brand-sub" data-i18n="ui.brandSub">complete walkthrough, zero missables</div><div class="lang-wrap"><label class="lang-label" data-i18n="ui.langLabel" for="langSel">Language</label><select class="lang-select" id="langSel"></select></div>
+<div class="progress-wrap">
+<div class="progress-label"><span data-i18n="ui.progress">Guide progress</span><b><span id="pDone">0</span> / <span id="pTotal">0</span></b></div>
+<div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+<div class="progress-note" data-i18n="ui.progressNote">Your marks are stored only in this browser</div>
+<button class="reset-btn" data-i18n="ui.reset" id="resetBtn">reset all marks</button>
+</div>
+<div class="nav-group">
+<div class="nav-group-title" data-i18n="nav.group.0">Preparation</div>
+<a class="nav-link" data-i18n="nav.rules" href="#rules">Survival rules</a>
+<a class="nav-link" data-i18n="nav.missables" href="#missables">Missable content</a>
+</div>
+<div class="nav-group">
+<div class="nav-group-title" data-i18n="nav.group.1">Walkthrough</div>
+<a class="nav-link" data-i18n="nav.act1" href="#act1">Act I · Awakening</a>
+<a class="nav-link" data-i18n="nav.act2" href="#act2">Act II · Vernworth</a>
+<a class="nav-link" data-i18n="nav.act3" href="#act3">Act III · Battahl</a>
+<a class="nav-link" data-i18n="nav.act4" href="#act4">Act IV · Finale</a>
+<a class="nav-link" data-i18n="nav.act5" href="#act5">Act V · Unmoored World</a>
+</div>
+<div class="nav-group">
+<div class="nav-group-title" data-i18n="nav.group.2">Reference</div>
+<a class="nav-link" data-i18n="nav.sphinx" href="#sphinx">Sphinx · 10 riddles</a>
+<a class="nav-link" data-i18n="nav.vocations" href="#vocations">Vocations &amp; masters</a>
+<a class="nav-link" data-i18n="nav.romance" href="#romance">Romance</a>
+<a class="nav-link" data-i18n="nav.checklist" href="#checklist">100% checklist</a>
+</div>
+</nav>
+<main>
+<!-- ================= HERO ================= -->
+<header class="hero">
+<svg aria-hidden="true" class="hero-dragon" fill="none" viewbox="0 0 340 190">
+<path d="M170 172 C120 150 60 140 34 88 C52 96 74 96 92 88 C70 76 48 56 42 30 C66 48 96 58 122 56 C116 40 116 24 122 10 C140 32 162 44 170 46 C178 44 200 32 218 10 C224 24 224 40 218 56 C244 58 274 48 298 30 C292 56 270 76 248 88 C266 96 288 96 306 88 C280 140 220 150 170 172 Z" fill="rgba(179,69,46,.08)" stroke="#c9a227" stroke-width="2.5"></path>
+<path d="M170 46 L170 168" opacity=".5" stroke="#c9a227" stroke-width="1.4"></path>
+<circle cx="170" cy="86" fill="rgba(179,69,46,.3)" r="7" stroke="#d96a4e" stroke-width="2"></circle>
+<path d="M92 88 C120 100 148 108 170 108 C192 108 220 100 248 88" opacity=".45" stroke="#c9a227" stroke-width="1.2"></path>
+</svg>
+<div class="hero-kicker" data-i18n="hero.kicker">Arisen · Pawn · Dragon</div>
+<h1>Dragon's<br/>Dogma <span class="accent">II</span></h1>
+<p class="hero-sub" data-i18n="hero.sub">A complete walkthrough: every quest in order, all branches, timers and points of no return — so you never miss a single line of content.</p>
+<div class="hero-stats">
+<div class="hero-stat"><div class="num">24</div><div class="lbl" data-i18n="hero.stat.0">main quests</div></div>
+<div class="hero-stat"><div class="num">60+</div><div class="lbl" data-i18n="hero.stat.1">side quests</div></div>
+<div class="hero-stat"><div class="num">10</div><div class="lbl" data-i18n="hero.stat.2">Sphinx riddles</div></div>
+<div class="hero-stat"><div class="num">2</div><div class="lbl" data-i18n="hero.stat.3">endings</div></div>
+</div>
+<div class="scroll-hint" data-i18n="hero.scroll">Scroll down</div>
+</header>
+<!-- ================= RULES ================= -->
+<section class="chapter" id="rules">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.rules.num">Before you begin</div>
+<h2 data-i18n="ch.rules.h2">Survival rules</h2>
+<p class="lead" data-i18n="ch.rules.lead">Dragon's Dogma 2 does not forgive inattention: a single save file, hidden timers and quests that fail silently. Read this to the end — and the game will never catch you off guard.</p>
+</div>
+<div class="banner danger reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><path d="M12 2L1 21h22L12 2z" stroke="#d96a4e" stroke-width="2"></path><path d="M12 9v5" stroke="#d96a4e" stroke-width="2"></path><circle cx="12" cy="17.5" fill="#d96a4e" r="1.3"></circle></svg>
+<div>
+<h4 data-i18n="banners.0.h">A single save for everything</h4>
+<p data-i18n="banners.0.p.0">There are no manual slots: only autosave and inn rest saves. Any mistake — the death of a quest NPC, a failed timer, a wrong choice — is recorded forever. The golden rule: <strong>sleep at an inn before any important quest</strong> — it creates a rollback point you can return to via "Load Game → Last Inn Rest".</p>
+</div>
+</div>
+<div class="banner reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="#c9a227" stroke-width="2"></circle><path d="M12 7v5l3.5 2" stroke="#c9a227" stroke-width="2"></path></svg>
+<div>
+<h4 data-i18n="banners.1.h">Hidden timers</h4>
+<p data-i18n="banners.1.p.0">Some quests are timed, but the game <strong>never shows the timer</strong>. Time passes when you sleep at inns and houses, rest at campsites, "doze" on benches and ride oxcarts. The rules are simple:</p>
+<ul data-i18n="banners.1.ul.0"><li>Pick up a quest — do it right away, do not put it off "for later".</li><li>Do not sleep or sit on benches while a timed quest is active.</li><li>After finishing a quest objective, <strong>always talk to the quest giver to the very end</strong> — leaving the area early can mark the quest as "interrupted".</li></ul>
+</div>
+</div>
+<div class="banner reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><path d="M12 3l2.4 5.2L20 9l-4 4 1 5.8L12 16l-5 2.8 1-5.8-4-4 5.6-.8L12 3z" stroke="#c9a227" stroke-width="1.8"></path></svg>
+<div>
+<h4 data-i18n="banners.2.h">The Arisen's insurance kit</h4>
+<ul data-i18n="banners.2.ul.0"><li><strong>Wakestone</strong> — revives a dead NPC. If a quest giver dies, do not panic: find the body (city dead end up in the Charnel House) and revive them.</li><li><strong>Ibrahim's shop</strong> (Checkpoint Rest Town) — buys back sold quest items and makes <strong>forgeries</strong>, which solve half of the game's "choice dilemmas".</li><li><strong>Portcrystal + Ferrystone</strong> — place crystals at key points (near the Sphinx — mandatory!), saving hours of real time.</li><li>Struggling with a quest? Swap your pawns for fresh ones with <strong>quest knowledge</strong> — they will hint and guide you.</li></ul>
+</div>
+</div>
+<div class="banner danger reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><path d="M4 20V8l8-5 8 5v12" stroke="#d96a4e" stroke-width="2"></path><path d="M9 20v-6h6v6" stroke="#d96a4e" stroke-width="2"></path></svg>
+<div>
+<h4 data-i18n="banners.3.h">Three points of no return</h4>
+<ul data-i18n="banners.3.ul.0"><li><strong>"Feast of Deception"</strong> — the coronation. Afterwards part of Vernworth's affairs "freezes" and Wilhelmina's quest gets a tight availability window.</li><li><strong>The summit of Moonglint Tower</strong> (quest "Legacy") — the last chance to finish ALL side affairs of the old world. At the bottom of the tower — the final sweep.</li><li><strong>The Dragon's choice</strong> — attack the Dragon (true ending) or walk away (false). Both branches are described in Act IV.</li></ul>
+</div>
+</div>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 44 L0 22 L38 30 L75 14 L120 26 L165 10 L210 28 L255 16 L310 32 L360 12 L415 26 L470 8 L520 24 L575 14 L630 30 L680 12 L740 26 L795 10 L850 28 L905 16 L960 30 L1015 12 L1070 26 L1125 14 L1200 24 L1200 44 Z" fill="#2a2520"></path></svg>
+<!-- ================= MISSABLES ================= -->
+<section class="chapter chapter-dark" id="missables">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.missables.num">Danger map</div>
+<h2 data-i18n="ch.missables.h2">Missable content</h2>
+<p class="lead" data-i18n="ch.missables.lead">Everything that can be lost forever on a single page. Check this table every time you are about to "push the story a little further".</p>
+</div>
+<h3 class="reveal" data-i18n="sec.missables.h3.0" style="font-size:22px;margin:10px 0 6px;text-transform:uppercase;letter-spacing:.06em">Timed quests</h3>
+<p class="reveal" data-i18n="sec.missables.p.0" style="color:var(--ink-dim);max-width:72ch">Failure is not always fatal, but it almost always cuts off rewards, quest chains or NPC lives.</p>
+<div class="tbl-wrap reveal">
+<table>
+<thead><tr><th data-i18n="tbl.0.h.0">Quest</th><th data-i18n="tbl.0.h.1">Where it starts</th><th data-i18n="tbl.0.h.2">What happens if you delay</th></tr></thead>
+<tbody>
+<tr><td data-i18n="tbl.0.r.0.0"><b>Ordeals of a New Recruit</b></td><td data-i18n="tbl.0.r.0.1">Borderwatch Outpost, Fill</td><td data-i18n="tbl.0.r.0.2">Recruit Accardo dies</td></tr>
+<tr><td data-i18n="tbl.0.r.1.0"><b>Oxcart Courier</b></td><td data-i18n="tbl.0.r.1.1">Vernworth, Donovan at the northern oxcart station</td><td data-i18n="tbl.0.r.1.2">No serious consequences, but the quest fails</td></tr>
+<tr><td data-i18n="tbl.0.r.2.0"><b>Till Death Do Us Part</b></td><td data-i18n="tbl.0.r.2.1">Vernworth, noble quarter, Margit</td><td data-i18n="tbl.0.r.2.2"><b>Gregor dies</b></td></tr>
+<tr><td data-i18n="tbl.0.r.3.0"><b>Prey for the Pack</b></td><td data-i18n="tbl.0.r.3.1">Checkpoint Rest Town, apothecary Morris</td><td data-i18n="tbl.0.r.3.2"><b>The boy Rodge dies</b> in the cave</td></tr>
+<tr><td data-i18n="tbl.0.r.4.0"><b>Shadowed Prayers</b></td><td data-i18n="tbl.0.r.4.1">Bakbattahl, palace, Menella</td><td data-i18n="tbl.0.r.4.2"><b>Empress Nadinia dies</b>; failure of "A Candle in the Storm" and "Crossing in Shadow"; cannot buy a house in Bakbattahl</td></tr>
+<tr><td data-i18n="tbl.0.r.5.0"><b>Every Rose Has Its Thorn</b></td><td data-i18n="tbl.0.r.5.1">Vernworth, Wilhelmina (hidden start)</td><td data-i18n="tbl.0.r.5.2">Wilhelmina romance unavailable; she goes to prison. The quest window closes as the story progresses</td></tr>
+<tr><td data-i18n="tbl.0.r.6.0"><b>Readvent of Calamity</b></td><td data-i18n="tbl.0.r.6.1">Melve, dragon attack</td><td data-i18n="tbl.0.r.6.2">Miss the start of Ulrika's route and meeting Sigurd in Melve</td></tr>
+<tr><td data-i18n="tbl.0.r.7.0"><b>Out of the Forest, Into the Forge</b></td><td data-i18n="tbl.0.r.7.1">Bakbattahl, Sara</td><td data-i18n="tbl.0.r.7.2">Short timer for gathering scalecinder in the cave</td></tr>
+<tr><td data-i18n="tbl.0.r.8.0"><b>Off the Pilfered Path</b></td><td data-i18n="tbl.0.r.8.1">Bakbattahl, prison</td><td data-i18n="tbl.0.r.8.2">Hugo's storyline concludes without you</td></tr>
+</tbody>
+</table>
+</div>
+<h3 class="reveal" data-i18n="sec.missables.h3.1" style="font-size:22px;margin:26px 0 6px;text-transform:uppercase;letter-spacing:.06em">Other things that are easy to miss</h3>
+<div class="tbl-wrap reveal">
+<table>
+<thead><tr><th data-i18n="tbl.1.h.0">Content</th><th data-i18n="tbl.1.h.1">Condition of loss</th><th data-i18n="tbl.1.h.2">How not to miss it</th></tr></thead>
+<tbody>
+<tr><td data-i18n="tbl.1.r.0.0"><b>Ulrika romance</b></td><td data-i18n="tbl.1.r.0.1">Ignore "Readvent of Calamity" when the dragon attacks Melve</td><td data-i18n="tbl.1.r.0.2">The moment you see the event in Melve — go there immediately; then the chain Trouble on the Cape → Home Is Where the Hearth Is</td></tr>
+<tr><td data-i18n="tbl.1.r.1.0"><b>Wilhelmina romance</b></td><td data-i18n="tbl.1.r.1.1">Fail or miss "Every Rose Has Its Thorn"; leave for the Unmoored World</td><td data-i18n="tbl.1.r.1.2">Do the quest right after "Feast of Deception", before leaving for Battahl</td></tr>
+<tr><td data-i18n="tbl.1.r.2.0"><b>The Sphinx and her chests</b></td><td data-i18n="tbl.1.r.2.1">Attack her before solving all 10 riddles; miss with the Unmaking Arrow</td><td data-i18n="tbl.1.r.2.2">Do not touch her with weapons until the finale; save at an inn before the 10th riddle</td></tr>
+<tr><td data-i18n="tbl.1.r.3.0"><b>Mystic Spearhand vocation (mastery)</b></td><td data-i18n="tbl.1.r.3.1">Kill the dragon in Melve before talking to Sigurd</td><td data-i18n="tbl.1.r.3.2">Drive the dragon off (remove ~3 health bars), then talk to Sigurd</td></tr>
+<tr><td data-i18n="tbl.1.r.4.0"><b>Unmoored World evacuations</b></td><td data-i18n="tbl.1.r.4.1">Too many nights of sleep: the fog swallows settlements one by one</td><td data-i18n="tbl.1.r.4.2">In the endgame sleep as little as possible and evacuate settlements immediately</td></tr>
+<tr><td data-i18n="tbl.1.r.5.0"><b>True ending</b></td><td data-i18n="tbl.1.r.5.1">Walk away from the Dragon fight in "Legacy"</td><td data-i18n="tbl.1.r.5.2">On the Dragon's back, use the Godsbane Blade on yourself (details — Act IV)</td></tr>
+<tr><td data-i18n="tbl.1.r.6.0"><b>Sacred Arbor elves</b></td><td data-i18n="tbl.1.r.6.1">Do not heal the Arborheart before the Unmoored World</td><td data-i18n="tbl.1.r.6.2">Finish The Ailing Arborheart and Out of the Forest, Into the Forge before the finale</td></tr>
+<tr><td data-i18n="tbl.1.r.7.0"><b>The Arisen's Shadow quest</b></td><td data-i18n="tbl.1.r.7.1">Leave for Battahl without waiting for/catching the spy in Vernworth</td><td data-i18n="tbl.1.r.7.2">Walk around Vernworth's trade quarter until Bermudo finds you himself</td></tr>
+</tbody>
+</table>
+</div>
+<div class="q-tip reveal" data-i18n="sec.missables.tip.0"><b>Tip:</b> before story "turning points" (coronation, departure to Battahl, Moonglint tower) return to this table and to the checklist at the end of the guide — run your eyes over the open items.</div>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 0 L1200 0 L1200 18 L1150 28 L1095 12 L1040 30 L985 14 L930 26 L875 10 L820 28 L765 16 L710 32 L655 12 L600 26 L545 10 L490 24 L435 14 L380 30 L325 12 L270 26 L215 8 L160 24 L105 16 L50 28 L0 16 Z" fill="#2a2520"></path></svg>
+<!-- ================= ACT I ================= -->
+<section class="chapter chapter-green" id="act1">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.act1.num">Act I</div>
+<h2 data-i18n="ch.act1.h2">Awakening</h2>
+<p class="lead" data-i18n="ch.act1.lead">From the penal mine to the gates of Vernworth. Everything is laid down here: the first side quests, the first NPC fate branch and the first timed quest that players fail without even noticing.</p>
+</div>
+<!-- Q1 -->
+<article class="quest reveal" data-qid="m01">
+<div class="q-head"><input class="q-check" data-q="m01" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m01.title">1. Chained Awakening</span> <span class="en">Gaoled Awakening</span></div><div class="q-meta"><span data-i18n="q.m01.meta.0"><b>Type:</b> main</span><span data-i18n="q.m01.meta.1"><b>Location:</b> penal mine</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m01.body"><ol class="q-steps"><li>Create your character. <strong>Attention:</strong> body build affects running speed, grab reach and carry weight; changing race/body later is nearly impossible (until NG+).</li><li>Follow Fisque and talk to Rook.</li><li>Bring a stone block from the mine and place it next to Rook.</li><li>Defeat the gorgon outside (learn to dodge the petrification).</li><li>Run to the cliff after Rook and jump.</li></ol><div class="q-tip"><b>Do not miss:</b> before the jump, search the camp — small supplies lie in the tents and will help at the start.</div></div>
+</article>
+<!-- Q2 -->
+<article class="quest reveal" data-qid="m02">
+<div class="q-head"><input class="q-check" data-q="m02" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m02.title">2. A Tale's Beginning</span> <span class="en">Tale's Beginning</span></div><div class="q-meta"><span data-i18n="q.m02.meta.0"><b>Type:</b> main</span><span data-i18n="q.m02.meta.1"><b>Location:</b> road to Borderwatch</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m02.body"><ol class="q-steps"><li>Follow the soldiers to the outpost, fighting off two packs of goblins on the way.</li><li>At the Riftstone summon your first pawn and create your <strong>main pawn</strong> — it stays with you for the whole game.</li><li>Rest at the Borderwatch Lounge.</li></ol><div class="q-tip"><b>Tip:</b> give your main pawn a useful specialization (e.g. Woodland Wordsmith for Elvish translation — needed in two quests).</div></div>
+</article>
+<!-- Q3 -->
+<article class="quest reveal" data-qid="m03">
+<div class="q-head"><input class="q-check" data-q="m03" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m03.title">3. In Dragon's Wake</span> <span class="en">In Dragon's Wake</span></div><div class="q-meta"><span data-i18n="q.m03.meta.0"><b>Type:</b> main</span><span data-i18n="q.m03.meta.1"><b>Location:</b> Melve → Vernworth</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m03.body"><ol class="q-steps"><li>Head to the south-west gate of the outpost and go to the ravaged Melve.</li><li>Watch the vision, talk to Ulrika, Gregor and Lennart.</li><li>Escort Gregor to Vernworth: goblins and harpies on the road, a cyclops in the ravine.</li><li>Activate the forgotten Riftstone along the way, then take an oxcart or walk.</li></ol><div class="q-warn">Do not leave Melve without picking up the side quests below: "Medicament Predicament" and "Nesting Troubles" are taken right during this quest, and "Ordeals of a New Recruit" at the outpost has a hidden timer.</div></div>
+</article>
+<h3 class="reveal" data-i18n="sec.act1.h3.0" style="font-family:var(--serif-d);font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:44px 0 18px">Side quests of the act — in order of completion</h3>
+<!-- s: ordeals -->
+<article class="quest reveal" data-qid="s01">
+<div class="q-head"><input class="q-check" data-q="s01" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s01.title">Ordeals of a New Recruit</span> <span class="en">Ordeals of a New Recruit</span></div><div class="q-meta"><span data-i18n="q.s01.meta.0"><b>Where:</b> Borderwatch Outpost, Fill</span><span data-i18n="q.s01.meta.1"><b>Condition:</b> right after arriving at the outpost</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s01.tag.0">Timer</span><span class="tag t-miss" data-i18n="q.s01.tag.1">Fail: NPC death</span></div>
+<div class="q-body" data-i18n="q.s01.body"><p>Recruit Accardo is missing — he must be found. He lies wounded on a rock east of the camp (past the bridge, by the harpy nests). Climb up, fight off the harpies and carry him back.</p><div class="q-warn">Timed quest: if you go to sleep or leave the area for long, Accardo dies. Do it immediately.</div><div class="reward-line"><b>Reward</b> — 400 XP, 100 g, Lantern Oil</div></div>
+</article>
+<!-- s: provisioner -->
+<article class="quest reveal" data-qid="s02">
+<div class="q-head"><input class="q-check" data-q="s02" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s02.title">The Provisioner's Plight</span> <span class="en">The Provisioner's Plight</span></div><div class="q-meta"><span data-i18n="q.s02.meta.0"><b>Where:</b> Borderwatch Outpost</span><span data-i18n="q.s02.meta.1"><b>Condition:</b> after In Dragon's Wake</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s02.body"><p>The outpost's quartermaster complains about missing supplies. The trail leads to the nearest goblin lair: clear it, take the cargo and return. A good excuse to level the party before the road south.</p></div>
+</article>
+<!-- s: medicament -->
+<article class="quest reveal" data-qid="s03">
+<div class="q-head"><input class="q-check" data-q="s03" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s03.title">Medicament Predicament</span> <span class="en">Medicament Predicament</span></div><div class="q-meta"><span data-i18n="q.s03.meta.0"><b>Where:</b> Melve</span><span data-i18n="q.s03.meta.1"><b>Condition:</b> during In Dragon's Wake</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s03.body"><p>The local healer needs ingredients for remedies. Gather the requested herbs/fruits in the vicinity (everything grows right around the village) and return them. If an ingredient rots — buy a fresh one from a merchant or gather it again.</p><div class="q-tip"><b>Tip:</b> while in Melve, visit Dudley's shop — he sells the grimoire <strong>"Fulminous Shield"</strong> (5,000 g), needed later for the quests Spellbound and The Sorcerer's Appraisal.</div></div>
+</article>
+<!-- s: nesting -->
+<article class="quest reveal" data-qid="s04">
+<div class="q-head"><input class="q-check" data-q="s04" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s04.title">Nesting Troubles</span> <span class="en">Nesting Troubles</span></div><div class="q-meta"><span data-i18n="q.s04.meta.0"><b>Where:</b> Melve, Lennart</span><span data-i18n="q.s04.meta.1"><b>Condition:</b> after In Dragon's Wake</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s04.body"><p>Lennart asks you to destroy harpy nests around Melve. The nests are marked on the map; a bow or magick works best — harpies fly.</p><div class="reward-line"><b>Reward</b> — 400 XP, 1,250 g, Stoutness Extract</div></div>
+</article>
+<!-- s: brothers -->
+<article class="quest reveal" data-qid="s05">
+<div class="q-head"><input class="q-check" data-q="s05" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s05.title">Brothers Brave and Timid</span> <span class="en">Brothers Brave and Timid</span></div><div class="q-meta"><span data-i18n="q.s05.meta.0"><b>Where:</b> Melve</span><span data-i18n="q.s05.meta.1"><b>Condition:</b> after starting Seat of the Sovran</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s05.body"><p>One of the brothers was taken prisoner by goblins nearby. Escort the second one to the lair, clear it and free the prisoner.</p><div class="reward-line"><b>Reward</b> — 400 XP, 1,500 g, Homespun Cloak</div></div>
+</article>
+<!-- s: claw them -->
+<article class="quest reveal" data-qid="s06">
+<div class="q-head"><input class="q-check" data-q="s06" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s06.title">Claw Them Into Shape</span> <span class="en">Claw Them Into Shape</span></div><div class="q-meta"><span data-i18n="q.s06.meta.0"><b>Where:</b> Moonglow Garden, Beren</span><span data-i18n="q.s06.meta.1"><b>Condition:</b> after In Dragon's Wake</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s06.body"><p>Instructor Beren is training recruits and asks you to bring weapons for practice, then to spar with his student. The camp lies on the hills west of the Melve–Vernworth road.</p><div class="q-tip">The quest opens a follow-up — <strong>Beren's Final Lesson</strong> (appears after Seat of the Sovran).</div></div>
+</article>
+<!-- s: spellbound -->
+<article class="quest reveal" data-qid="s07">
+<div class="q-head"><input class="q-check" data-q="s07" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s07.title">Spellbound</span> <span class="en">Spellbound</span></div><div class="q-meta"><span data-i18n="q.s07.meta.0"><b>Where:</b> Eini's house, north of Melve</span><span data-i18n="q.s07.meta.1"><b>Condition:</b> after In Dragon's Wake</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s07.tag.0">Choice</span><span class="tag t-class" data-i18n="q.s07.tag.1">Mage/Sorcerer masteries</span></div>
+<div class="q-body" data-i18n="q.s07.body"><p>Trisha dreams of studying magick, but her grandmother Eini is against it. Trisha will ask you to bring <strong>five grimoires</strong>. This quest intersects with "The Sorcerer's Appraisal" — read both before handing in the books.</p><div class="branch"><h5>Where to get the 5 grimoires</h5><ul><li><b>Fulminous Shield</b> — buy from merchant Dudley in Melve (5,000 g).</li><li><b>Towering Earth</b> — from magistrate Waldhar (quest The Caged Magistrate, Gracious Hand storeroom library).</li><li><b>Let There Be Light</b> — second floor of Myrddin's house in Checkpoint Rest Town (climb the outer wall so he does not notice).</li><li><b>Howling Blizzard</b> — Waterfall Cave (north-east of Melve) or trade with Wendy in the Nameless Village.</li><li><b>Nation's Death Knell</b> — the same chest in Waterfall Cave or the castle ruins at the Ancient Battleground.</li></ul></div><div class="branch"><h5>The right call</h5><p>Give Trisha the <strong>genuine</strong> grimoires (she will spot forgeries). Return a day later: Trisha loses control of her magick — <strong>do not attack her</strong>, just dodge until she tires out, then grab her. Return again the next day for the rewards.</p></div><div class="reward-line"><b>Reward</b> — Turquoise Ring, Cast Stone staff, <b>Conjurer's Jottings</b> (Sorcerer mastery Meteoron) and <b>Enchanter's Almanac</b> from Eini (Mage mastery Celestial Paean)</div></div>
+</article>
+<div class="banner reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6" stroke="#c9a227" stroke-width="2"></path></svg>
+<div>
+<h4 data-i18n="banners.4.h">Act summary</h4>
+<p data-i18n="banners.4.p.0">Before entering Vernworth you should have closed: Ordeals of a New Recruit, The Provisioner's Plight, Medicament Predicament, Nesting Troubles, and ideally started Claw Them Into Shape and Spellbound. Next — the capital and the densest part of the game.</p>
+</div>
+</div>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 44 L0 20 L45 32 L95 12 L150 26 L205 10 L260 30 L315 14 L370 28 L425 8 L480 24 L535 16 L590 32 L645 12 L700 26 L755 10 L810 28 L865 16 L920 30 L975 12 L1030 26 L1085 14 L1140 26 L1200 18 L1200 44 Z" fill="#2a2520"></path></svg>
+<!-- ================= ACT II ================= -->
+<section class="chapter" id="act2">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.act2.num">Act II</div>
+<h2 data-i18n="ch.act2.h2">Vernworth</h2>
+<p class="lead" data-i18n="ch.act2.lead">Vermund's capital is the heart of the game. The rules work like this: Captain Brant's tasks can be done in any order, side quests revolve around them, and the coronation ('Feast of Deception') is the first point of no return.</p>
+</div>
+<div class="banner danger reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><path d="M12 2L1 21h22L12 2z" stroke="#d96a4e" stroke-width="2"></path><path d="M12 9v5" stroke="#d96a4e" stroke-width="2"></path><circle cx="12" cy="17.5" fill="#d96a4e" r="1.3"></circle></svg>
+<div>
+<h4 data-i18n="banners.5.h">Safe order for the act</h4>
+<p data-i18n="banners.5.p.0">1) Seat of the Sovran → 2) Monster Culling (Scaly Invaders, Vocation Frustration along the way) → 3) The Heel of History → 4) The Caged Magistrate → 5) Disa's Plot → 6) The Stolen Throne → 7) An Unsettling Encounter → 8) The Nameless Village → 9) The Arisen's Shadow → 10) ALL remaining Vernworth &amp; Melve side quests → 11) Every Rose Has Its Thorn (right after the coronation!) → 12) A Veil of Gossamer Clouds → and only then to Battahl.</p>
+</div>
+</div>
+<!-- m04 -->
+<article class="quest reveal" data-qid="m04">
+<div class="q-head"><input class="q-check" data-q="m04" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m04.title">4. Seat of the Sovran</span> <span class="en">Seat of the Sovran</span></div><div class="q-meta"><span data-i18n="q.m04.meta.0"><b>Type:</b> main</span><span data-i18n="q.m04.meta.1"><b>Location:</b> Vernworth</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m04.body"><ol class="q-steps"><li>Talk to Captain Brant at the gates.</li><li>Ask Norman about the runaway boy.</li><li>Come to the Stardrop Inn at night and hear out Brant's plan.</li><li>Receive three tasks: <strong>Monster Culling</strong>, <strong>Disa's Plot</strong>, <strong>The Caged Magistrate</strong>. He will add more later.</li></ol><div class="q-tip">Brant is your handler until the end of the act. He meets at night in the Stardrop Inn.</div></div>
+</article>
+<!-- m05 -->
+<article class="quest reveal" data-qid="m05">
+<div class="q-head"><input class="q-check" data-q="m05" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m05.title">5. Monster Culling</span> <span class="en">Monster Culling</span></div><div class="q-meta"><span data-i18n="q.m05.meta.0"><b>Type:</b> main</span><span data-i18n="q.m05.meta.1"><b>Location:</b> Vernworth surroundings</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m05.body"><p>Three monster hotspots, order is free:</p><ol class="q-steps"><li><strong>Trevo Mine</strong> (west) — clear it and grab the <strong>greatsword and archistaff</strong>: they are needed for the Vocation Frustration side quest (Warrior and Sorcerer unlock).</li><li><strong>Harve village</strong> — talk to Dylan, clear the cave of saurians and walk the guards out. The <strong>Scaly Invaders</strong> side quest is also taken here.</li><li><strong>East Vermund</strong> — drive goblins away from the guards.</li><li>Return to Brant at night at the Stardrop.</li></ol><div class="q-tip">On the way to the mine, stop by the Vernworth Charnel House — Wakestone shards lie there.</div></div>
+</article>
+<!-- s: vocation frustration -->
+<article class="quest reveal" data-qid="s08">
+<div class="q-head"><input class="q-check" data-q="s08" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s08.title">Vocation Frustration</span> <span class="en">Vocation Frustration</span></div><div class="q-meta"><span data-i18n="q.s08.meta.0"><b>Where:</b> Vernworth, vocation guild</span><span data-i18n="q.s08.meta.1"><b>Condition:</b> after Seat of the Sovran</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-class" data-i18n="q.s08.tag.0">Vocations: Warrior + Sorcerer</span></div>
+<div class="q-body" data-i18n="q.s08.body"><p>The guild clerk cannot issue the new vocations without sample weapons. Bring a <strong>greatsword and an archistaff</strong> — both lie in Trevo Mine (Monster Culling quest). Hand them in and <strong>Warrior</strong> and <strong>Sorcerer</strong> unlock for you and your pawns.</p></div>
+</article>
+<!-- s: scaly invaders -->
+<article class="quest reveal" data-qid="s09">
+<div class="q-head"><input class="q-check" data-q="s09" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s09.title">Scaly Invaders</span> <span class="en">Scaly Invaders</span></div><div class="q-meta"><span data-i18n="q.s09.meta.0"><b>Where:</b> Harve</span><span data-i18n="q.s09.meta.1"><b>Condition:</b> during Monster Culling</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s09.body"><p>Harve village is overrun by saurians. Clear all the marked spots and report to the villagers. This quest matters for Ulrika's route: it sets up the events of "Trouble on the Cape".</p></div>
+</article>
+<!-- m06 -->
+<article class="quest reveal" data-qid="m06">
+<div class="q-head"><input class="q-check" data-q="m06" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m06.title">6. Disa's Plot</span> <span class="en">Disa's Plot</span></div><div class="q-meta"><span data-i18n="q.m06.meta.0"><b>Type:</b> main</span><span data-i18n="q.m06.meta.1"><b>Location:</b> Vernworth castle</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m06.body"><ol class="q-steps"><li>Take the Eventide Mask from Brant.</li><li>Follow the guard Sonya to the barracks inside the castle grounds.</li><li>Climb to the upper floor and take the <strong>torn letter</strong>.</li><li>Jump out of the window and return to Brant.</li></ol><div class="q-tip">The castle enforces disguises: the mask plus evening wear answers most guard questions, but it is still better to stay out of forbidden areas.</div></div>
+</article>
+<!-- s: heel of history -->
+<article class="quest reveal" data-qid="s10">
+<div class="q-head"><input class="q-check" data-q="s10" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s10.title">The Heel of History</span> <span class="en">The Heel of History</span></div><div class="q-meta"><span data-i18n="q.s10.meta.0"><b>Where:</b> Vernworth slums</span><span data-i18n="q.s10.meta.1"><b>Condition:</b> during Vernworth story quests</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-miss" data-i18n="q.s10.tag.0">Required for story</span></div>
+<div class="q-body" data-i18n="q.s10.body"><ol class="q-steps"><li>Give food to the beggar Kendrick twice.</li><li>Talk to the three children nearby, then to Kendrick again.</li><li>Find Malcolm in the Gracious Hand storerooms and follow him to the hidden library.</li></ol><div class="q-warn">This quest is the key to "The Caged Magistrate": magistrate Waldhar will refuse to escape until you find him the library. Finish The Heel of History in advance to avoid running back and forth.</div></div>
+</article>
+<!-- m07 -->
+<article class="quest reveal" data-qid="m07">
+<div class="q-head"><input class="q-check" data-q="m07" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m07.title">The Caged Magistrate</span> <span class="en">The Caged Magistrate</span></div><div class="q-meta"><span data-i18n="q.m07.meta.0"><b>Type:</b> main</span><span data-i18n="q.m07.meta.1"><b>Location:</b> Vernworth gaol tower</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m07.body"><ol class="q-steps"><li>Take the gaol key and the mask from Brant.</li><li>Infiltrate Gaol Tower (through the castle yard), talk to Otto at its base.</li><li>Open the first cell on the right — Waldhar is inside. He will not leave without a decent refuge.</li><li>Finish <strong>The Heel of History</strong> and tell Waldhar about the found library.</li><li>Walk him out of the tower and report to Brant.</li></ol><div class="q-tip">After the quest Waldhar sits in the Gracious Hand storerooms — he gives the side quest <strong>A Magisterial Amenity</strong> and the grimoire <strong>Towering Earth</strong> for Spellbound / The Sorcerer's Appraisal.</div></div>
+</article>
+<!-- m08 -->
+<article class="quest reveal" data-qid="m08">
+<div class="q-head"><input class="q-check" data-q="m08" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m08.title">The Stolen Throne</span> <span class="en">The Stolen Throne</span></div><div class="q-meta"><span data-i18n="q.m08.meta.0"><b>Type:</b> main</span><span data-i18n="q.m08.meta.1"><b>Location:</b> Vernworth Hall</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m08.body"><ol class="q-steps"><li>Get the formal set: the clothes lie in Allard's estate (noble quarter). Without a Courtly Tunic and Courtly Breeches you will not be let into the masquerade.</li><li>Come to the masquerade at Vernworth Hall.</li><li>Go through the secret passage in the rear part of the hall, along the balcony — to the Rose Chateau bordello.</li><li>Peek through the peephole at the false Sovran and report to Brant.</li></ol><div class="q-tip"><b>Do not miss:</b> keep the formal outfit — you will need it again for access to Myrddin (The Sorcerer's Appraisal) and the coronation.</div></div>
+</article>
+<!-- m09 -->
+<article class="quest reveal" data-qid="m09">
+<div class="q-head"><input class="q-check" data-q="m09" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m09.title">The Nameless Village</span> <span class="en">The Nameless Village</span></div><div class="q-meta"><span data-i18n="q.m09.meta.0"><b>Type:</b> main</span><span data-i18n="q.m09.meta.1"><b>Location:</b> north-east Vermund</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-miss" data-i18n="q.m09.tag.0">Can be missed</span></div>
+<div class="q-body" data-i18n="q.m09.body"><ol class="q-steps"><li>Walk to the marker in the north-east; before the landslide, turn onto the right-hand trail.</li><li>Climb the rocks past the minotaur.</li><li>Talk to Sreyl at the entrance, then to Flod in the old noble estate.</li><li>Go down the stairs into the Nameless Village Depths and run the obstacle course (traps + sparring bout).</li><li>Talk to Flod, take 5 chests and report to Brant.</li></ol><div class="q-tip">While you are here: Wendy at the village entrance will trade a forgery of the "Fulminous Shield" for the grimoire <strong>"Howling Blizzard"</strong> (needed for Spellbound).</div></div>
+</article>
+<!-- m10 -->
+<article class="quest reveal" data-qid="m10">
+<div class="q-head"><input class="q-check" data-q="m10" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m10.title">An Unsettling Encounter</span> <span class="en">An Unsettling Encounter</span></div><div class="q-meta"><span data-i18n="q.m10.meta.0"><b>Type:</b> main</span><span data-i18n="q.m10.meta.1"><b>Location:</b> Vernworth castle</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m10.body"><ol class="q-steps"><li>With Sonya again to the barracks, up the spiral staircase.</li><li>Wait for Allard and Sias to leave the chambers (do not enter earlier!).</li><li>Take the <strong>letter with the Battahl crest</strong> from the secret room.</li><li>Jump out of the window; <strong>Wilhelmina</strong> will shield you from the guards — remember her, this is the start of her route.</li></ol></div>
+</article>
+<!-- s: arisen's shadow -->
+<article class="quest reveal" data-qid="s11">
+<div class="q-head"><input class="q-check" data-q="s11" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s11.title">The Arisen's Shadow</span> <span class="en">The Arisen's Shadow</span></div><div class="q-meta"><span data-i18n="q.s11.meta.0"><b>Where:</b> Vernworth, trade quarter</span><span data-i18n="q.s11.meta.1"><b>Condition:</b> random encounter during Brant's quests</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s11.tag.0">Choice</span><span class="tag t-miss" data-i18n="q.s11.tag.1">Can be missed</span></div>
+<div class="q-body" data-i18n="q.s11.body"><p>A hooded man — <strong>Bermudo</strong> — has been following you. Chase him down and grab him (the grab button). Then the choice:</p><div class="branch"><h5>Option A: take the bribe</h5><p>Bermudo pays <strong>5,000 g</strong> and disappears. The quest is finished, but you lose an extra story line.</p></div><div class="branch"><h5>Option B: refuse (recommended)</h5><p>A fight begins. <strong>Do not kill him</strong> — grab and hold him until Brant arrives and arrests Bermudo. Talk to Brant a couple of days later: the interrogation gives extra dialogue and an improved border pass to Battahl.</p></div><div class="q-warn">If you accidentally kill Bermudo — revive him with a Wakestone or carry his body to Brant at night in the Stardrop. If you do not finish the quest before leaving for Battahl — it is gone.</div><div class="reward-line"><b>Reward</b> — up to 1,000 XP + 5,000 g (bribe) or story continuation</div></div>
+</article>
+<!-- m11 -->
+<article class="quest reveal" data-qid="m11">
+<div class="q-head"><input class="q-check" data-q="m11" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m11.title">Feast of Deception</span> <span class="en">Feast of Deception</span></div><div class="q-meta"><span data-i18n="q.m11.meta.0"><b>Type:</b> main</span><span data-i18n="q.m11.meta.1"><b>Location:</b> Vernworth</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-miss" data-i18n="q.m11.tag.0">Point of no return #1</span></div>
+<div class="q-body" data-i18n="q.m11.body"><p>The coronation of the false Sovran: almost pure cutscenes. Tell Brant you are ready, put on the formal outfit and follow him.</p><div class="q-warn">Before telling Brant "I am ready", make sure you have finished: The Arisen's Shadow, all Vernworth side quests from the list below, Ulrika's chain (Readvent of Calamity + Trouble on the Cape) and Beren's Final Lesson. After the coronation some city affairs change or disappear.</div></div>
+</article>
+</section>
+<section class="chapter" id="act2b" style="padding-top:20px">
+<h3 class="reveal" data-i18n="sec.act2b.h3.0" style="font-family:var(--serif-d);font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:10px 0 18px">Vernworth and surroundings — all side quests in order</h3>
+<!-- s: oxcart courier -->
+<article class="quest reveal" data-qid="s12">
+<div class="q-head"><input class="q-check" data-q="s12" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s12.title">Oxcart Courier</span> <span class="en">Oxcart Courier</span></div><div class="q-meta"><span data-i18n="q.s12.meta.0"><b>Where:</b> northern oxcart station, Vernworth</span><span data-i18n="q.s12.meta.1"><b>Condition:</b> Donovan, after In Dragon's Wake</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s12.tag.0">Timer</span></div>
+<div class="q-body" data-i18n="q.s12.body"><p>Donovan asks you to deliver a parcel. Take the job and set off right away: dawdling fails the quest (no heavy consequences, but the journal entry stays red).</p><div class="reward-line"><b>Reward</b> — 300 XP, 5,000 g, Miner's Hosen</div></div>
+</article>
+<!-- s: a place to call home -->
+<article class="quest reveal" data-qid="s13">
+<div class="q-head"><input class="q-check" data-q="s13" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s13.title">A Place to Call Home</span> <span class="en">A Place to Call Home</span></div><div class="q-meta"><span data-i18n="q.s13.meta.0"><b>Where:</b> Vernworth, Mildred</span><span data-i18n="q.s13.meta.1"><b>Condition:</b> during Vernworth story quests</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s13.body"><p>Mildred is looking for a caretaker for a house. After a short errand she will offer to sell it for <strong>20,000 g</strong> — agree: this is your free "sleep" in the capital and, more importantly, the condition for Wilhelmina's letter in the Every Rose Has Its Thorn quest.</p></div>
+</article>
+<!-- s: gift of giving -->
+<article class="quest reveal" data-qid="s14">
+<div class="q-head"><input class="q-check" data-q="s14" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s14.title">The Gift of Giving</span> <span class="en">The Gift of Giving</span></div><div class="q-meta"><span data-i18n="q.s14.meta.0"><b>Where:</b> Vernworth slums, Daphne</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s14.body"><p>The girl Daphne gives flowers to the poor. Help her gather bouquets and deliver gifts. Completion opens the follow-up — House of the Blue Sunbright.</p><div class="reward-line"><b>Reward</b> — 900 XP, 100 g, Golden Trove Beetle (increases carry weight)</div></div>
+</article>
+<!-- s: house of blue sunbright -->
+<article class="quest reveal" data-qid="s15">
+<div class="q-head"><input class="q-check" data-q="s15" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s15.title">House of the Blue Sunbright</span> <span class="en">House of the Blue Sunbright</span></div><div class="q-meta"><span data-i18n="q.s15.meta.0"><b>Where:</b> Vernworth</span><span data-i18n="q.s15.meta.1"><b>Condition:</b> after The Gift of Giving</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s15.body"><p>The continuation of Daphne's story and the house she looks after. A simple, warm errand — done right near the slums; do not put it off for long.</p></div>
+</article>
+<!-- s: beggar's tale -->
+<article class="quest reveal" data-qid="s16">
+<div class="q-head"><input class="q-check" data-q="s16" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s16.title">A Beggar's Tale</span> <span class="en">A Beggar's Tale</span></div><div class="q-meta"><span data-i18n="q.s16.meta.0"><b>Where:</b> Vernworth market square, Benton</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s16.tag.0">3 outcomes</span></div>
+<div class="q-body" data-i18n="q.s16.body"><p>The beggar Albert lives suspiciously well. Wait for night, follow him to a house in the common quarter and take the <strong>beggar's tatters</strong>. Then — who to give the item to (one choice only!):</p><div class="branch"><h5>Give to Celina (wife at Walter's tavern)</h5><p>A couple of days later Albert and Celina are found dead. Tragedy, 3,000 g + Noonbloom.</p></div><div class="branch"><h5>Give to Hilde (Baldwin estate)</h5><p>Albert gives up his double life and becomes an honest citizen. Reward: 3 onyx.</p></div><div class="branch"><h5>Return to Albert</h5><p>He pays <strong>5,000 g</strong> for your silence and keeps living in two houses.</p></div></div>
+</article>
+<!-- s: gift of the bow -->
+<article class="quest reveal" data-qid="s17">
+<div class="q-head"><input class="q-check" data-q="s17" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s17.title">Gift of the Bow</span> <span class="en">Gift of the Bow</span></div><div class="q-meta"><span data-i18n="q.s17.meta.0"><b>Where:</b> Vernworth, Roderick's smithy, Glindwyr</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s17.body"><p>The elf Glindwyr admires human bows. <strong>Condition: you must be in the Archer class.</strong> Show him a bow and demonstrate your shooting at the marked spot. Unlocks the quest A Trial of Archery.</p></div>
+</article>
+<!-- s: trial of archery -->
+<article class="quest reveal" data-qid="s18">
+<div class="q-head"><input class="q-check" data-q="s18" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s18.title">A Trial of Archery</span> <span class="en">A Trial of Archery</span></div><div class="q-meta"><span data-i18n="q.s18.meta.0"><b>Where:</b> Vernworth → Sacred Arbor</span><span data-i18n="q.s18.meta.1"><b>Condition:</b> after Gift of the Bow, a couple of days later</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-class" data-i18n="q.s18.tag.0">Archer mastery</span><span class="tag t-choice" data-i18n="q.s18.tag.1">Outcomes</span></div>
+<div class="q-body" data-i18n="q.s18.body"><ol class="q-steps"><li>Meet Glindwyr at the camp south-west of Melve and escort him to Sacred Arbor (a chimera on the road — be ready).</li><li>In the Ancestral Chamber Glindwyr will shoot an ogre in the arm — immediately run up and <strong>pick up Daryln</strong> (grab), carry her out while the others distract the ogre.</li><li>You can finish the ogre — Glindwyr opens a shortcut; or simply carry the girl the long way.</li><li>Talk to Taliesin outside.</li></ol><div class="q-warn">If you fumble and hand Daryln to the ogre — she dies (bad ending for the quest). Save her first.</div><div class="reward-line"><b>Reward</b> — 2,800 XP, 16,000 g, Repeller Bow, Portcrystal; Taliesin teaches <b>Heavenly Shot</b> (Archer mastery). A pawn with the Woodland Wordsmith specialization translates the Elvish dialogue</div></div>
+</article>
+<!-- s: till death -->
+<article class="quest reveal" data-qid="s19">
+<div class="q-head"><input class="q-check" data-q="s19" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s19.title">Till Death Do Us Part</span> <span class="en">Till Death Do Us Part</span></div><div class="q-meta"><span data-i18n="q.s19.meta.0"><b>Where:</b> noble quarter, Margit</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s19.tag.0">Timer</span><span class="tag t-miss" data-i18n="q.s19.tag.1">Fail: Gregor dies</span></div>
+<div class="q-body" data-i18n="q.s19.body"><p>Margit asks you to look into a plot against her husband Gregor — the very knight from Melve. Follow the chain of objectives and intervene in the roadside ambush. If you delay — Gregor dies.</p><div class="reward-line"><b>Reward</b> — 2,800 XP, 5,000 g, Steeled Virtue, Lustrous Targe</div></div>
+</article>
+<!-- s: saint of the slums -->
+<article class="quest reveal" data-qid="s20">
+<div class="q-head"><input class="q-check" data-q="s20" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s20.title">Saint of the Slums</span> <span class="en">Saint of the Slums</span></div><div class="q-meta"><span data-i18n="q.s20.meta.0"><b>Where:</b> Gracious Hand refuge, slums</span><span data-i18n="q.s20.meta.1"><b>Condition:</b> likely after The Heel of History</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s20.tag.0">3 outcomes</span></div>
+<div class="q-body" data-i18n="q.s20.body"><ol class="q-steps"><li>Talk to Abbess Elena and bring <strong>3 miasmite</strong> (mined from phantoms at night / bought).</li><li>After the tour, talk to the patient Lyubomir and to Lottie.</li><li>At night go down to the basement ward: take the <strong>treatment records</strong> and the <strong>unsigned medicine</strong>.</li><li>Follow Elena's secret meeting with Alois at the well in the common quarter (night).</li><li>Take the medicine to Doctor Radcliffe in Checkpoint Rest Town and wait for the analysis.</li><li>Return and <strong>grab Elena</strong> in the basement (literally — with the grab button).</li></ol><div class="branch"><h5>Outcomes</h5><p>With evidence Elena is arrested for good; without Radcliffe's analysis she is released; you can also spook her at the meeting — then she flees.</p></div><div class="q-warn">Hidden post-quest: right after Elena's arrest tell Radcliffe to come (3,000 g) — otherwise Lyubomir dies. Reward: 10 Blighting Arrows.</div><div class="reward-line"><b>Reward</b> — 1,600 XP, 11,000 g</div></div>
+</article>
+<!-- s: ornate box -->
+<article class="quest reveal" data-qid="s21">
+<div class="q-head"><input class="q-check" data-q="s21" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s21.title">The Ornate Box</span> <span class="en">The Ornate Box</span></div><div class="q-meta"><span data-i18n="q.s21.meta.0"><b>Where:</b> trade quarter</span><span data-i18n="q.s21.meta.1"><b>Condition:</b> after In Dragon's Wake</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s21.body"><p>A story around a shop with "special" goods: buy the box, then decide what to do with the merchant and his merchandise. An introductory quest to the forgery theme that will flourish in Checkpoint Rest Town.</p></div>
+</article>
+<!-- s: masked correspondence -->
+<article class="quest reveal" data-qid="s22">
+<div class="q-head"><input class="q-check" data-q="s22" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s22.title">Masked Correspondence</span> <span class="en">Masked Correspondence</span></div><div class="q-meta"><span data-i18n="q.s22.meta.0"><b>Where:</b> Vernworth</span><span data-i18n="q.s22.meta.1"><b>Condition:</b> likely after The Ornate Box</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s22.body"><p>The continuation of the shop line: delivering "special" correspondence. A small errand with variants; check your journal after visiting the shop.</p></div>
+</article>
+<!-- s: sculptor -->
+<article class="quest reveal" data-qid="s23">
+<div class="q-head"><input class="q-check" data-q="s23" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s23.title">A Case of Sculptor's Block</span> <span class="en">A Case of Sculptor's Block</span></div><div class="q-meta"><span data-i18n="q.s23.meta.0"><b>Where:</b> Vernworth, noble quarter, Clark</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s23.body"><p>The sculptor Clark has lost his inspiration. Help him find his muse — a small quest that is easy to miss: just talk to him when passing the estates.</p></div>
+</article>
+<!-- s: dulled steel -->
+<article class="quest reveal" data-qid="s24">
+<div class="q-head"><input class="q-check" data-q="s24" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s24.title">Dulled Steel, Cold Forge</span> <span class="en">Dulled Steel, Cold Forge</span></div><div class="q-meta"><span data-i18n="q.s24.meta.0"><b>Where:</b> Vernworth smithy</span><span data-i18n="q.s24.meta.1"><b>Condition:</b> during Vernworth story quests</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s24.body"><p>The Vernworth smith confesses: true mastery remained in Battahl. A "deposit" quest — it continues as the chain <strong>Steeled Resolve, Blazing Forge</strong> already in Bakbattahl and ultimately leads to the elven smithy.</p></div>
+</article>
+<!-- s: magisterial amenity -->
+<article class="quest reveal" data-qid="s25">
+<div class="q-head"><input class="q-check" data-q="s25" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s25.title">A Magisterial Amenity</span> <span class="en">A Magisterial Amenity</span></div><div class="q-meta"><span data-i18n="q.s25.meta.0"><b>Where:</b> Gracious Hand storerooms</span><span data-i18n="q.s25.meta.1"><b>Condition:</b> after The Caged Magistrate</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s25.body"><p>Waldhar has settled in the underground library, but cannot read without his glasses. Find his spectacles in the gaol tower / treasure room and return them.</p><div class="reward-line"><b>Reward</b> — 900 XP, the book Winter's Path</div></div>
+</article>
+<!-- s: readvent -->
+<article class="quest reveal" data-qid="s26">
+<div class="q-head"><input class="q-check" data-q="s26" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s26.title">Readvent of Calamity</span> <span class="en">Readvent of Calamity</span></div><div class="q-meta"><span data-i18n="q.s26.meta.0"><b>Where:</b> Melve</span><span data-i18n="q.s26.meta.1"><b>Condition:</b> a few days after Seat of the Sovran + Scaly Invaders</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s26.tag.0">Timer</span><span class="tag t-love" data-i18n="q.s26.tag.1">Ulrika route</span><span class="tag t-class" data-i18n="q.s26.tag.2">Vocation: Mystic Spearhand</span></div>
+<div class="q-body" data-i18n="q.s26.body"><p>Return to Melve a few days later: a <strong>lesser dragon</strong> attacks the village. Strike the red boils on its body; when about 3 health bars remain, the dragon flies off.</p><div class="q-warn"><b>Do not kill the dragon in Melve!</b> Talk after the fight to the knight in red — <strong>Sigurd</strong>: he unlocks the Mystic Spearhand vocation. If you kill the dragon before talking to him, the spearmaiden's mastery can be lost until the very end of the game.</div><div class="q-tip">A few days later look into Ulrika's house — her personal line begins (Martin, fleeing to Harve).</div></div>
+</article>
+<!-- s: trouble on the cape -->
+<article class="quest reveal" data-qid="s27">
+<div class="q-head"><input class="q-check" data-q="s27" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s27.title">Trouble on the Cape</span> <span class="en">Trouble on the Cape</span></div><div class="q-meta"><span data-i18n="q.s27.meta.0"><b>Where:</b> Harve</span><span data-i18n="q.s27.meta.1"><b>Condition:</b> during the Readvent of Calamity branch</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-love" data-i18n="q.s27.tag.0">Ulrika route</span></div>
+<div class="q-body" data-i18n="q.s27.body"><p>Ulrika in Harve argues with Jonas: a villager, Zoran, went missing at the cape. Descend into Stormlance Cave, clear the saurians and save Zoran. After the quest Ulrika returns to her role as village head.</p></div>
+</article>
+<!-- s: home is where hearth -->
+<article class="quest reveal" data-qid="s28">
+<div class="q-head"><input class="q-check" data-q="s28" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s28.title">Home Is Where the Hearth Is</span> <span class="en">Home Is Where the Hearth Is</span></div><div class="q-meta"><span data-i18n="q.s28.meta.0"><b>Where:</b> Melve</span><span data-i18n="q.s28.meta.1"><b>Condition:</b> after Trouble on the Cape</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-love" data-i18n="q.s28.tag.0">Ulrika route finale</span></div>
+<div class="q-body" data-i18n="q.s28.body"><p>Lennart and Ulrika are rebuilding Melve. Help gather the villagers scattered across the world and set the village life going again. The finale of the chain is a scene that locks in Ulrika's romantic line.</p><div class="reward-line"><b>Reward</b> — 2,200 XP, 12,000 g, Ring of Reassurance</div></div>
+</article>
+<!-- s: beren final -->
+<article class="quest reveal" data-qid="s29">
+<div class="q-head"><input class="q-check" data-q="s29" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s29.title">Beren's Final Lesson</span> <span class="en">Beren's Final Lesson</span></div><div class="q-meta"><span data-i18n="q.s29.meta.0"><b>Where:</b> Moonglow Garden</span><span data-i18n="q.s29.meta.1"><b>Condition:</b> Seat of the Sovran + Claw Them Into Shape</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s29.body"><p>Beren received the order to disband the camp. Run the final training and sparring — a worthy farewell to the instructor.</p></div>
+</article>
+<!-- s: every rose -->
+<article class="quest reveal" data-qid="s30">
+<div class="q-head"><input class="q-check" data-q="s30" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s30.title">Every Rose Has Its Thorn</span> <span class="en">Every Rose Has Its Thorn</span></div><div class="q-meta"><span data-i18n="q.s30.meta.0"><b>Where:</b> Rose Chateau, Wilhelmina</span><span data-i18n="q.s30.meta.1"><b>Condition:</b> right after Feast of Deception</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s30.tag.0">3 in-game days</span><span class="tag t-love" data-i18n="q.s30.tag.1">Wilhelmina romance</span><span class="tag t-miss" data-i18n="q.s30.tag.2">Very easy to miss</span></div>
+<div class="q-body" data-i18n="q.s30.body"><p>The most capricious quest in the game. The start works only like this:</p><ol class="q-steps"><li>Right after the coronation go to the Rose Chateau and raise Wilhelmina's affinity to maximum: give bouquets (chest in her room) one per day until gifting becomes unavailable.</li><li>Leave Vernworth and rest 3 days outside the city (an oxcart to Checkpoint Rest Town + a bench is a reliable method).</li><li>Return at night: Rolf stands at her door. Enter her room and look through the peephole behind the painting.</li><li>Offer help — you will have <strong>3 days</strong> to gather evidence against Allard.</li><li>Sven in the castle will direct you to Patrick (at night); he will lure Allard out of the estate. Inside — a painting, behind it the <strong>murder report</strong>.</li><li>Show the evidence to Brant (night, Stardrop), then give it to Wilhelmina and choose "keep helping".</li><li>On her signal enter and grab Allard; after the scene — escape through the window, get away from the guards, sleep at the inn.</li><li>In the morning return to the Rose Chateau — a romantic scene and the end of the quest.</li></ol><div class="q-warn">Fail to make it in 3 days — Wilhelmina is arrested and the romance is lost. Leave for Battahl / the Unmoored World before the start — the quest is unavailable.</div><div class="reward-line"><b>Reward</b> — 1,200 XP, 8,500 g, Ring of Benevolence</div></div>
+</article>
+<!-- s: veil of gossamer clouds -->
+<article class="quest reveal" data-qid="s31">
+<div class="q-head"><input class="q-check" data-q="s31" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s31.title">A Veil of Gossamer Clouds</span> <span class="en">A Veil of Gossamer Clouds</span></div><div class="q-meta"><span data-i18n="q.s31.meta.0"><b>Where:</b> Vernworth castle, Sven</span><span data-i18n="q.s31.meta.1"><b>Condition:</b> after Feast of Deception</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s31.tag.0">2 outcomes</span></div>
+<div class="q-body" data-i18n="q.s31.body"><p>Sven found a torn letter and asks you to find out its meaning.</p><div class="branch"><h5>Fast path</h5><p>Show the letter to Waldhar in the Gracious Hand storerooms (requires finished The Caged Magistrate + The Heel of History): he recognizes a love letter. Smaller reward: 4,000 XP, 14,000 g.</p></div><div class="branch"><h5>Full path (recommended)</h5><p>In Bakbattahl, in the Forbidden Magick Laboratory (Flamebearer Palace, stairs down), find the delivered letter to Lord Phaesus and bring it to Sven. Bigger reward: 4,000 XP, 20,000 g + Ferrystone.</p></div></div>
+</article>
+<div class="banner reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6" stroke="#c9a227" stroke-width="2"></path></svg>
+<div>
+<h4 data-i18n="banners.6.h">Act summary</h4>
+<p data-i18n="banners.6.p.0">Before leaving south, check the checklist: Ulrika's route, Wilhelmina, The Arisen's Shadow, Saint of the Slums, Spellbound (grimoires), Gift of the Bow / A Trial of Archery, Till Death Do Us Part. Next — Battahl, and the way back will be long.</p>
+</div>
+</div>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 0 L1200 0 L1200 20 L1150 30 L1100 14 L1045 28 L990 12 L935 26 L880 10 L825 30 L770 16 L715 32 L660 10 L605 26 L550 14 L495 28 L440 12 L385 26 L330 16 L275 30 L220 10 L165 24 L110 16 L55 28 L0 18 Z" fill="#2a2520"></path></svg>
+<!-- ================= ACT III ================= -->
+<section class="chapter chapter-green" id="act3">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.act3.num">Act III</div>
+<h2 data-i18n="ch.act3.h2">Battahl</h2>
+<p class="lead" data-i18n="ch.act3.lead">Orange deserts, beastren and the most dangerous timers in the game. Order is critical here: pick up Shadowed Prayers and Prey for the Pack and close them instantly — hesitation kills the Empress and a child.</p>
+</div>
+<!-- m12 -->
+<article class="quest reveal" data-qid="m12">
+<div class="q-head"><input class="q-check" data-q="m12" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m12.title">Nation of the Lambent Flame</span> <span class="en">Nation of the Lambent Flame</span></div><div class="q-meta"><span data-i18n="q.m12.meta.0"><b>Type:</b> main</span><span data-i18n="q.m12.meta.1"><b>Location:</b> border → Bakbattahl</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m12.body"><ol class="q-steps"><li>Go to Checkpoint Rest Town. Humans need a border pass (issued by Brant) or a <strong>beastren mask</strong> from Ibrahim; beastren pass freely. Trick: you can hide in an oxcart.</li><li>Cross the border and follow the road to Bakbattahl.</li><li>Find Menella at the Rockmouse's Burrow.</li></ol><div class="q-warn">On the way through the border, do not skip Checkpoint Rest Town: The Sorcerer's Appraisal, Hunt for the Jadeite Orb, Prey for the Pack and Mercy among Thieves are taken there.</div></div>
+</article>
+<!-- s: sorcerer's appraisal -->
+<article class="quest reveal" data-qid="s32">
+<div class="q-head"><input class="q-check" data-q="s32" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s32.title">The Sorcerer's Appraisal</span> <span class="en">The Sorcerer's Appraisal</span></div><div class="q-meta"><span data-i18n="q.s32.meta.0"><b>Where:</b> Checkpoint Rest Town, Myrddin's manor</span><span data-i18n="q.s32.meta.1"><b>Condition:</b> formal outfit (Courtly Tunic + Breeches)</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s32.tag.0">Choice</span><span class="tag t-class" data-i18n="q.s32.tag.1">Sorcerer mastery</span></div>
+<div class="q-body" data-i18n="q.s32.body"><p>Myrddin asks for the same five grimoires as Trisha (Spellbound). The solution — <strong>forgeries from Ibrahim</strong> (6,000 g per book, one day of work):</p><div class="branch"><h5>The optimal scheme</h5><p>Give Myrddin the <strong>forgeries</strong> (at least 3 at once — then he will not notice) and Trisha the <strong>originals</strong>. This closes both quests and both mastery branches.</p></div><div class="q-tip">If you already learned Meteoron from Trisha — tell Myrddin the truth and show the Turquoise Ring (Trisha's gift): he softens and still gives the reward.</div><div class="reward-line"><b>Reward</b> — 11,000 g, Ares Morpho Robe, <b>Myrddin's Chronicle</b> (Sorcerer mastery Maelstrom)</div></div>
+</article>
+<!-- s: jadeite orb -->
+<article class="quest reveal" data-qid="s33">
+<div class="q-head"><input class="q-check" data-q="s33" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s33.title">Hunt for the Jadeite Orb</span> <span class="en">Hunt for the Jadeite Orb</span></div><div class="q-meta"><span data-i18n="q.s33.meta.0"><b>Where:</b> Checkpoint Rest Town</span><span data-i18n="q.s33.meta.1"><b>Condition:</b> after Seat of the Sovran; Everard and Offulve will find you themselves</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s33.tag.0">4 outcomes</span></div>
+<div class="q-body" data-i18n="q.s33.body"><p>Two men are hunting a stolen orb. The orb is sold by Ibrahim (7,500 g); a copy is made there too (2,000 g). Before choosing, sleep at an inn:</p><div class="branch"><h5>Give to Offulve (beastren boy)</h5><p>The "kind" finale: 3,000 g + Elite Camping Kit. You can also give him the forgery — same reward.</p></div><div class="branch"><h5>Give to Everard (original)</h5><p>He will verify the orb with Ibrahim: 12,000 g + <strong>Ring of Skullduggery</strong> (backstab damage).</p></div><div class="branch"><h5>Cheat both</h5><p>Forgery to Offulve, original to Everard: both rewards. You cannot give Everard the forgery without bribing Ibrahim (12,000 g) — you will go to prison.</p></div><div class="q-tip">Optimum: forgery to Offulve + original to Everard. The choice has no long-term consequences — only the rewards differ.</div></div>
+</article>
+<!-- s: prey for the pack -->
+<article class="quest reveal" data-qid="s34">
+<div class="q-head"><input class="q-check" data-q="s34" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s34.title">Prey for the Pack</span> <span class="en">Prey for the Pack</span></div><div class="q-meta"><span data-i18n="q.s34.meta.0"><b>Where:</b> Checkpoint Rest Town, Morris's apothecary</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s34.tag.0">Timer</span><span class="tag t-miss" data-i18n="q.s34.tag.1">Fail: Rodge dies</span></div>
+<div class="q-body" data-i18n="q.s34.body"><p>The boy Rodge is missing — dragged into the <strong>Cavern of the Forsaken</strong>. Do not sleep, do not wait — run right away: in the cave follow the flower "signposts", clear the monsters and lead Rodge out. A delay = his death.</p><div class="reward-line"><b>Reward</b> — 4,000 XP, 11,000 g, Miracle Roborant</div></div>
+</article>
+<!-- s: mercy among thieves -->
+<article class="quest reveal" data-qid="s35">
+<div class="q-head"><input class="q-check" data-q="s35" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s35.title">Mercy among Thieves</span> <span class="en">Mercy among Thieves</span></div><div class="q-meta"><span data-i18n="q.s35.meta.0"><b>Where:</b> Battahl side of the Checkpoint</span><span data-i18n="q.s35.meta.1"><b>Condition:</b> after crossing the border</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s35.body"><ol class="q-steps"><li>Feed the boy Tumme by the road twice.</li><li>Talk to the people opposite — they will point you to Lissandro.</li><li>Lissandro asks you to find the Coral Snakes band. Travelers on the road will tell you where the lair is.</li><li>One finale: the leader Lanzo betrays young Hugo, Hugo is arrested. This sets up the Off the Pilfered Path quest.</li></ol></div>
+</article>
+<!-- s: tolled to rest -->
+<article class="quest reveal" data-qid="s36">
+<div class="q-head"><input class="q-check" data-q="s36" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s36.title">Tolled to Rest</span> <span class="en">Tolled to Rest</span></div><div class="q-meta"><span data-i18n="q.s36.meta.0"><b>Where:</b> Ancient Battleground</span><span data-i18n="q.s36.meta.1"><b>Condition:</b> save Oscar from monsters</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s36.body"><p>Save Oscar at the ancient battlefield and help him with the rite at the belfry. While you are here — the grimoire <strong>"Nation's Death Knell"</strong> lies in the castle ruins, and the Sphinx lives to the north-east (see "Riddles").</p><div class="reward-line"><b>Reward</b> — 3,000 XP, 9,000 g</div></div>
+</article>
+<!-- s: welcome to battahl -->
+<article class="quest reveal" data-qid="s37">
+<div class="q-head"><input class="q-check" data-q="s37" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s37.title">Welcome to Battahl</span> <span class="en">Welcome to Battahl</span></div><div class="q-meta"><span data-i18n="q.s37.meta.0"><b>Where:</b> Bakbattahl</span><span data-i18n="q.s37.meta.1"><b>Condition:</b> on first arrival</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s37.body"><p>An introductory quest to the city: getting to know Bakbattahl's districts and its ways. Do it right away — it opens the city activities and an understanding of the balance of power.</p></div>
+</article>
+<!-- s: shadowed prayers -->
+<article class="quest reveal" data-qid="s38">
+<div class="q-head"><input class="q-check" data-q="s38" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s38.title">Shadowed Prayers</span> <span class="en">Shadowed Prayers</span></div><div class="q-meta"><span data-i18n="q.s38.meta.0"><b>Where:</b> Flamebearer Palace, Menella</span><span data-i18n="q.s38.meta.1"><b>Condition:</b> after Nation of the Lambent Flame</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s38.tag.0">Timer</span><span class="tag t-miss" data-i18n="q.s38.tag.1">Fail: Nadinia dies</span></div>
+<div class="q-body" data-i18n="q.s38.body"><p>An assassination is being prepared on Empress Nadinia. Menella gives a writ describing the killer (usually: <strong>a man with swept-back hair and a wounded right hand</strong> — but check your own writ!).</p><ol class="q-steps"><li>Sleep until morning and come to the prayer.</li><li>The search window is short: scan the crowd (photo mode helps). Look for a bandage/scar on the right hand; most often it is a man in a tunic at the right edge of the steps.</li><li>Grab exactly that person — there is no second try.</li></ol><div class="q-warn">Failure cascades: Nadinia dies, the quests A Candle in the Storm and Crossing in Shadow burn down, and the chance to buy a house in Bakbattahl is lost. Sleep at an inn before the prayer as a rollback point.</div><div class="reward-line"><b>Reward</b> — 3,500 XP, 18,000 g, 5 Jasper; the caught killer gives intel on the Coral Snakes (5,000 g bribe in prison)</div></div>
+</article>
+<!-- s: poisonous proposal -->
+<article class="quest reveal" data-qid="s39">
+<div class="q-head"><input class="q-check" data-q="s39" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s39.title">A Poisonous Proposal</span> <span class="en">A Poisonous Proposal</span></div><div class="q-meta"><span data-i18n="q.s39.meta.0"><b>Where:</b> Bakbattahl</span><span data-i18n="q.s39.meta.1"><b>Condition:</b> after Nation of the Lambent Flame</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s39.body"><p>A city line about suspicious potions and their dealer. Hear out the client in the city, follow the chain and decide the merchant's fate. A small but atmospheric quest about Battahl's mores.</p></div>
+</article>
+<!-- s: short-sighted ambition -->
+<article class="quest reveal" data-qid="s40">
+<div class="q-head"><input class="q-check" data-q="s40" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s40.title">Short-Sighted Ambition</span> <span class="en">Short-Sighted Ambition</span></div><div class="q-meta"><span data-i18n="q.s40.meta.0"><b>Where:</b> Bakbattahl, Isaac's shop</span><span data-i18n="q.s40.meta.1"><b>Condition:</b> after Nation of the Lambent Flame</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s40.tag.0">2 outcomes</span></div>
+<div class="q-body" data-i18n="q.s40.body"><p>The merchant Isaac's eyesight is failing and he asks for a ripe quince, and then — the second volume (definitely not cursed) of a grimoire. The volume is sold by Ibrahim.</p><div class="branch"><h5>Give the real grimoire</h5><p>It ends badly: Isaac's shop closes.</p></div><div class="branch"><h5>Give the forgery</h5><p>Isaac's and his family's life returns to normal. Ibrahim makes the forgery.</p></div><div class="q-tip">The choice affects one of the outcomes of the Off the Pilfered Path quest (Hugo's arrangement).</div></div>
+</article>
+<!-- s: steeled resolve -->
+<article class="quest reveal" data-qid="s41">
+<div class="q-head"><input class="q-check" data-q="s41" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s41.title">Steeled Resolve, Blazing Forge</span> <span class="en">Steeled Resolve, Blazing Forge</span></div><div class="q-meta"><span data-i18n="q.s41.meta.0"><b>Where:</b> Bakbattahl, Brokkr's smithy</span><span data-i18n="q.s41.meta.1"><b>Condition:</b> after Dulled Steel, Cold Forge</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s41.body"><p>The smithing chain continues: Sara and Brokkr will help bring back the old forging quality. Run their errands — the quest matters because it introduces Sara, the key figure of the elven line (The Ailing Arborheart).</p></div>
+</article>
+<!-- s: ailing arborheart -->
+<article class="quest reveal" data-qid="s42">
+<div class="q-head"><input class="q-check" data-q="s42" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s42.title">The Ailing Arborheart</span> <span class="en">The Ailing Arborheart</span></div><div class="q-meta"><span data-i18n="q.s42.meta.0"><b>Where:</b> Sacred Arbor, Daryln</span><span data-i18n="q.s42.meta.1"><b>Condition:</b> after A Trial of Archery and Steeled Resolve, Blazing Forge</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-miss" data-i18n="q.s42.tag.0">Needed for endgame</span></div>
+<div class="q-body" data-i18n="q.s42.body"><ol class="q-steps"><li>Talk to Daryln in Sacred Arbor: the Arborheart is fading, the remedy "gwyfencha" is needed.</li><li>A pawn with the <strong>Woodland Wordsmith</strong> specialization translates the Elvish and points the way; without one — through Gaustad's house.</li><li>The trail leads to Brokkr's smithy in Bakbattahl: Sara will trade the remedy for a <strong>Nutriabh</strong> dish — return to Daryln.</li></ol><div class="q-warn">If you do not heal the Arborheart before the Unmoored World, the evacuation of Sacred Arbor in the Wandering Roots quest ends with the death of the elves.</div></div>
+</article>
+<!-- s: out of the forest -->
+<article class="quest reveal" data-qid="s43">
+<div class="q-head"><input class="q-check" data-q="s43" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s43.title">Out of the Forest, Into the Forge</span> <span class="en">Out of the Forest, Into the Forge</span></div><div class="q-meta"><span data-i18n="q.s43.meta.0"><b>Where:</b> Bakbattahl, Sara</span><span data-i18n="q.s43.meta.1"><b>Condition:</b> after The Ailing Arborheart</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s43.tag.0">Timer (gathering)</span></div>
+<div class="q-body" data-i18n="q.s43.body"><ol class="q-steps"><li>Escort Daryln to Sara — she will take you to Straggler's Cave outside the city.</li><li>Gather <strong>scalecinder</strong> — green piles of dust all over the cave; smash crates. Time is limited, the goal is at least 6 portions.</li><li>Hand the scalecinder to Daryln — the Arborheart will be healed.</li></ol><div class="reward-line"><b>Reward</b> — 13,000 g, Warbler Capelet; the restored Arborheart (condition for saving the elves in the endgame)</div></div>
+</article>
+<!-- s: twixt rock -->
+<article class="quest reveal" data-qid="s44">
+<div class="q-head"><input class="q-check" data-q="s44" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s44.title">'Twixt a Rock and a Hard Place</span> <span class="en">'Twixt a Rock and a Hard Place</span></div><div class="q-meta"><span data-i18n="q.s44.meta.0"><b>Where:</b> Bakbattahl, trade quarter, Acasus</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s44.body"><p>Acasus asks you to deliver a plea letter from Ernesto to the camp on Agamen Volcanic Island. The road is long and dangerous — combine it with the quests around the volcanic island.</p><div class="reward-line"><b>Reward</b> — 2,500 XP, Ferrystone, 20,000 g</div></div>
+</article>
+<!-- s: phantom oxcart -->
+<article class="quest reveal" data-qid="s45">
+<div class="q-head"><input class="q-check" data-q="s45" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s45.title">The Phantom Oxcart</span> <span class="en">The Phantom Oxcart</span></div><div class="q-meta"><span data-i18n="q.s45.meta.0"><b>Where:</b> Vernworth / the highway</span><span data-i18n="q.s45.meta.1"><b>Condition:</b> after Nation of the Lambent Flame</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s45.body"><p>At night an oxcart that should not exist rides the highway. Investigate the rumors, find the "phantom" cart and uncover an underground scheme with pawns. Take a night outfit and stock up on Ferrystones.</p></div>
+</article>
+<!-- s: tensions on the highroad -->
+<article class="quest reveal" data-qid="s46">
+<div class="q-head"><input class="q-check" data-q="s46" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s46.title">Tensions on the Highroad</span> <span class="en">Tensions on the Highroad</span></div><div class="q-meta"><span data-i18n="q.s46.meta.0"><b>Where:</b> highway south of Vermund</span><span data-i18n="q.s46.meta.1"><b>Condition:</b> after Nation of the Lambent Flame</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.s46.tag.0">Choice</span></div>
+<div class="q-body" data-i18n="q.s46.body"><p>Sir Augustin's escort is interrupted by an attack: Ragnall shouts that the guardsman Simeon is a murderer and that you are the patsy. The choice is made by <strong>attacking the side you are against</strong> (even a grab counts as a hit!):</p><div class="branch"><h5>For Ragnall (recommended)</h5><p>You will cut down the guards and leave with him into Guerco Cave: learn the truth about the plot. Ragnall will remember this — important for Clash and Conclusion and his final event.</p></div><div class="branch"><h5>For Simeon</h5><p>Ragnall flees with Augustin; catch up with him in the same cave. Rewards are identical, only Ragnall's attitude changes.</p></div><div class="reward-line"><b>Reward</b> — 4,000 XP, 12,000 g (either way)</div></div>
+</article>
+<!-- s: noble exchange -->
+<article class="quest reveal" data-qid="s47">
+<div class="q-head"><input class="q-check" data-q="s47" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s47.title">A Noble Exchange</span> <span class="en">A Noble Exchange</span></div><div class="q-meta"><span data-i18n="q.s47.meta.0"><b>Where:</b> masquerade at Vernworth Hall</span><span data-i18n="q.s47.meta.1"><b>Condition:</b> between Nation of the Lambent Flame and A New Godsway</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s47.body"><p>At the next masquerade a nameless noble will ask for a "delicate" favor. A short social quest — drop by the masquerade when you are in Vernworth during this story period.</p></div>
+</article>
+<!-- s: candle in the storm -->
+<article class="quest reveal" data-qid="s48">
+<div class="q-head"><input class="q-check" data-q="s48" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s48.title">A Candle in the Storm</span> <span class="en">A Candle in the Storm</span></div><div class="q-meta"><span data-i18n="q.s48.meta.0"><b>Where:</b> Agamen Volcanic Island / Bakbattahl</span><span data-i18n="q.s48.meta.1"><b>Condition:</b> after Shadowed Prayers (Nadinia alive!)</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s48.body"><p>Menella keeps guarding Nadinia: the plot is not fully uncovered. Escort them and deal with the remaining threat. Successful completion together with "A Place to Call Home" opens <strong>Crossing in Shadow</strong>.</p></div>
+</article>
+<!-- s: crossing in shadow -->
+<article class="quest reveal" data-qid="s49">
+<div class="q-head"><input class="q-check" data-q="s49" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s49.title">Crossing in Shadow</span> <span class="en">Crossing in Shadow</span></div><div class="q-meta"><span data-i18n="q.s49.meta.0"><b>Where:</b> Vermund–Battahl border</span><span data-i18n="q.s49.meta.1"><b>Condition:</b> after A Place to Call Home and A Candle in the Storm</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s49.body"><p>A night operation: help those the law forbids cross the border. A quiet, dangerous run — go at night, avoid patrols and mind your lantern.</p></div>
+</article>
+<!-- s: put a spring -->
+<article class="quest reveal" data-qid="s50">
+<div class="q-head"><input class="q-check" data-q="s50" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s50.title">Put a Spring in Thy Step</span> <span class="en">Put a Spring in Thy Step</span></div><div class="q-meta"><span data-i18n="q.s50.meta.0"><b>Where:</b> Agamen Volcanic Island, Gaustad</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-class" data-i18n="q.s50.tag.0">Vocation: Magick Archer</span></div>
+<div class="q-body" data-i18n="q.s50.body"><ol class="q-steps"><li>Give the dwarf Gaustad <strong>3 any herbs</strong> (stock up in advance).</li><li>Walk him home — meeting his wife Cliodna.</li><li>Escort Gaustad to the Geyser Hamlet hot springs (Volcanic Island Camp).</li><li>At the springs Cliodna appears — the conversation unlocks the <strong>Magick Archer</strong> vocation; talk to her again before she leaves to immediately get the mastery <strong>Martyr's Bolt</strong>.</li></ol><div class="q-tip">A bottle of Newt Liqueur lies on the table in Gaustad's house — take it for The Sotted Sage quest.</div></div>
+</article>
+<!-- s: sotted sage -->
+<article class="quest reveal" data-qid="s51">
+<div class="q-head"><input class="q-check" data-q="s51" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s51.title">The Sotted Sage</span> <span class="en">The Sotted Sage</span></div><div class="q-meta"><span data-i18n="q.s51.meta.0"><b>Where:</b> Volcanic Island Camp, Lamond</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-class" data-i18n="q.s51.tag.0">Vocation: Warfarer</span></div>
+<div class="q-body" data-i18n="q.s51.body"><p>The drunk Lamond by the bathhouse asks for <strong>3 bottles of Newt Liqueur</strong>:</p><ul><li>craft: Fruit Wine + Saurian Tail (tails are cut from saurians);</li><li>buy from Erland in Bakbattahl (2,000 g);</li><li>take from Gaustad's house (quest Put a Spring in Thy Step).</li></ul><p>Hand over all three — Lamond reveals himself and unlocks the <strong>Warfarer</strong> vocation + the mastery <strong>Rearmament</strong>.</p><div class="reward-line"><b>Reward</b> — 980 XP, 500 g, Warfarer vocation</div></div>
+</article>
+<!-- s: off the pilfered path -->
+<article class="quest reveal" data-qid="s52">
+<div class="q-head"><input class="q-check" data-q="s52" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s52.title">Off the Pilfered Path</span> <span class="en">Off the Pilfered Path</span></div><div class="q-meta"><span data-i18n="q.s52.meta.0"><b>Where:</b> Bakbattahl prison / oxcart</span><span data-i18n="q.s52.meta.1"><b>Condition:</b> after Mercy among Thieves</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-timer" data-i18n="q.s52.tag.0">Timer</span><span class="tag t-choice" data-i18n="q.s52.tag.1">Multiple outcomes</span></div>
+<div class="q-body" data-i18n="q.s52.body"><ol class="q-steps"><li>Visit Hugo in Bakbattahl prison, exhaust the dialogues.</li><li>Talk to the inmate Brefft: it turns out Hugo's parents were killed by his mentor Lanzo (hiding at the Ancient Battleground).</li><li>Tell Hugo. The next day he escapes, kills Brefft, and goes for revenge.</li><li>Find Hugo at the Ancient Battleground and help him in the fight with Lanzo.</li><li>Afterwards — help Hugo settle in: the options depend on your past deeds (to Sara at the smithy — if Tolled to Rest and the smithing chain are done; to Isaac — if you gave the real grimoire; etc.).</li></ol><div class="q-warn">The quest is timed: do not abandon it halfway or Hugo's line concludes without you.</div></div>
+</article>
+<!-- m13 -->
+<article class="quest reveal" data-qid="m13">
+<div class="q-head"><input class="q-check" data-q="m13" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m13.title">Flickering Shadows</span> <span class="en">Flickering Shadows</span></div><div class="q-meta"><span data-i18n="q.m13.meta.0"><b>Type:</b> main</span><span data-i18n="q.m13.meta.1"><b>Location:</b> Bakbattahl and shrines</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-class" data-i18n="q.m13.tag.0">Vocation: Trickster</span></div>
+<div class="q-body" data-i18n="q.m13.body"><ol class="q-steps"><li>Scout Bakbattahl and exit by the northern road.</li><li>Talk to Ambrosius on the shore, gather shards of blue crystals.</li><li>Visit the Bay Wayside Shrine — the <strong>Dragonforged</strong> (a smith; endgame gear is upgraded here later).</li><li>Reverent Shrine — the oracle <strong>Luz</strong>: the conversation unlocks the <strong>Trickster</strong> vocation.</li><li>Return to Harve and talk to the elder Rivage.</li></ol></div>
+</article>
+<!-- m14 -->
+<article class="quest reveal" data-qid="m14">
+<div class="q-head"><input class="q-check" data-q="m14" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m14.title">Convergence</span> <span class="en">Convergence</span></div><div class="q-meta"><span data-i18n="q.m14.meta.0"><b>Type:</b> main</span><span data-i18n="q.m14.meta.1"><b>Location:</b> Seafloor Shrine</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m14.body"><p>Explore the temple risen from the sea near Harve, talk to the spirit Rothais and receive the <strong>Dulled Godsbane Blade</strong>. A short quest, but a crucial story branch.</p></div>
+</article>
+<!-- m15 -->
+<article class="quest reveal" data-qid="m15">
+<div class="q-head"><input class="q-check" data-q="m15" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m15.title">A New Godsway</span> <span class="en">A New Godsway</span></div><div class="q-meta"><span data-i18n="q.m15.meta.0"><b>Type:</b> main</span><span data-i18n="q.m15.meta.1"><b>Location:</b> forbidden magick laboratory</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-miss" data-i18n="q.m15.tag.0">Last chance for side quests</span></div>
+<div class="q-body" data-i18n="q.m15.body"><ol class="q-steps"><li>Bring the Dulled Godsbane Blade to Ambrosius.</li><li>Kill drakes and collect <strong>15 Wyrmslife Crystals</strong> (drakes roam the whole world; watch for red glows on the map and pawn rumors).</li><li>Optional — stop by Dragonsbreath Tower: Sigurd is there (if you missed him in Melve — a second chance at Mystic Spearhand).</li><li>Hand in the crystals and return to Ambrosius the next day.</li></ol><div class="q-warn">This is the last "calm" story quest. Before finishing it, close all remaining side quests of Vermund and Battahl — the final countdown begins next.</div></div>
+</article>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 44 L0 18 L50 30 L105 12 L160 26 L215 10 L270 28 L325 16 L380 32 L435 12 L490 26 L545 14 L600 28 L655 10 L710 26 L765 16 L820 30 L875 12 L930 26 L985 14 L1040 28 L1095 16 L1150 26 L1200 20 L1200 44 Z" fill="#191715"></path></svg>
+<!-- ================= ACT IV ================= -->
+<section class="chapter chapter-dark" id="act4">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.act4.num">Act IV</div>
+<h2 data-i18n="ch.act4.h2">Finale of the old world</h2>
+<p class="lead" data-i18n="ch.act4.lead">The Giant walks out of the sea, the Dragon waits on the tower. Here it is decided which ending you get — and whether you leave for the true finale at all.</p>
+</div>
+<!-- m16 -->
+<article class="quest reveal" data-qid="m16">
+<div class="q-head"><input class="q-check" data-q="m16" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m16.title">The Guardian Gigantus</span> <span class="en">The Guardian Gigantus</span></div><div class="q-meta"><span data-i18n="q.m16.meta.0"><b>Type:</b> main</span><span data-i18n="q.m16.meta.1"><b>Location:</b> Agamen Volcanic Island</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m16.body"><ol class="q-steps"><li>Pursue Phaesus through the Spellseal Door.</li><li>The Giant walks across the map: you can cling to it and break the crystalline growths (or simply escort it).</li><li>Scout the volcanic island and enter Moonglint Tower.</li></ol><div class="q-warn">The summit of Moonglint Tower is the <strong>final sweep point</strong>. Before climbing, finish all side quests, the Sphinx riddles and the romance routes. After — only the finale.</div></div>
+</article>
+<!-- s: clash and conclusion -->
+<article class="quest reveal" data-qid="s53">
+<div class="q-head"><input class="q-check" data-q="s53" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s53.title">Clash and Conclusion</span> <span class="en">Clash and Conclusion</span></div><div class="q-meta"><span data-i18n="q.s53.meta.0"><b>Where:</b> the Giant's path</span><span data-i18n="q.s53.meta.1"><b>Condition:</b> Tensions on the Highroad done on Ragnall's side</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s53.body"><p>During the Giant's march Ragnall will find you — the finale of his story with Simeon. If you want Ragnall to survive and stay your ally until the end of the game, choose his side here too.</p></div>
+</article>
+<!-- m17 legacy -->
+<article class="quest reveal" data-qid="m17">
+<div class="q-head"><input class="q-check" data-q="m17" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m17.title">Legacy</span> <span class="en">Legacy</span></div><div class="q-meta"><span data-i18n="q.m17.meta.0"><b>Type:</b> main</span><span data-i18n="q.m17.meta.1"><b>Location:</b> Moonglint Tower</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-choice" data-i18n="q.m17.tag.0">Ending choice</span><span class="tag t-miss" data-i18n="q.m17.tag.1">Point of no return #2</span></div>
+<div class="q-body" data-i18n="q.m17.body"><ol class="q-steps"><li>Climb the tower, survive the attack of Phaesus's minions.</li><li>The Dragon will offer a choice.</li></ol><div class="branch"><h5>Choice 1: walk away (false ending)</h5><p>Refuse the fight — the game shows the credits of the "normal" ending. The world stays as it is; you can load a save and choose otherwise.</p></div><div class="branch"><h5>Choice 2: accept the battle (true path)</h5><p>Fight the Dragon. The key moment — the flight on its back: <strong>select the Empowered Godsbane Blade in your inventory and use it on yourself</strong> while flying. Hesitate or defeat the Dragon "honestly" — you get the normal finale. Apply the blade — the true ending opens: the <strong>Unmoored World</strong>.</p></div><div class="q-tip">After the false-ending credits the game offers to return to the choice — so you cannot go wrong forever, but you will lose time.</div></div>
+</article>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 0 L1200 0 L1200 16 L1145 26 L1090 12 L1035 28 L980 14 L925 26 L870 10 L815 28 L760 12 L705 30 L650 14 L595 26 L540 10 L485 24 L430 16 L375 28 L320 12 L265 24 L210 14 L155 26 L100 10 L45 24 L0 16 Z" fill="#191715"></path></svg>
+<!-- ================= ACT V ================= -->
+<section class="chapter chapter-green" id="act5">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.act5.num">Act V</div>
+<h2 data-i18n="ch.act5.h2">Unmoored World</h2>
+<p class="lead" data-i18n="ch.act5.lead">The true endgame: red skies, drained seas and a limited supply of time. Ferrystones lie everywhere here, and every night of sleep brings the settlements closer to death.</p>
+</div>
+<div class="banner danger reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="#d96a4e" stroke-width="2"></circle><path d="M12 7v5l3.5 2" stroke="#d96a4e" stroke-width="2"></path></svg>
+<div>
+<h4 data-i18n="banners.7.h">The main rule of the Unmoored World</h4>
+<p data-i18n="banners.7.p.0">The fog advances with every rest: after several nights, settlements start dying one by one. The plan of action: <strong>evacuate all five settlements as early as possible</strong>, starting with the farthest (Volcanic Island Camp, Excavation Site), and do not sleep unless necessary. Pawns and Purgen dragons ambush you on the roads — prepare your party.</p>
+</div>
+</div>
+<!-- m18 dreams apart -->
+<article class="quest reveal" data-qid="m18">
+<div class="q-head"><input class="q-check" data-q="m18" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m18.title">Dreams Apart</span> <span class="en">Dreams Apart</span></div><div class="q-meta"><span data-i18n="q.m18.meta.0"><b>Type:</b> endgame</span><span data-i18n="q.m18.meta.1"><b>Location:</b> Unmoored World</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m18.body"><ol class="q-steps"><li>Look around: a world without water, new monsters, death without the old "checkpoint" revival.</li><li>Go to the Forbidden Magick Laboratory and talk to Phaesus.</li><li>Reunite with your main pawn in Bakbattahl.</li></ol></div>
+</article>
+<!-- m19 halls -->
+<article class="quest reveal" data-qid="m19">
+<div class="q-head"><input class="q-check" data-q="m19" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m19.title">Halls of the First Dawn</span> <span class="en">Halls of the First Dawn</span></div><div class="q-meta"><span data-i18n="q.m19.meta.0"><b>Type:</b> endgame</span><span data-i18n="q.m19.meta.1"><b>Location:</b> Seafloor Shrine</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m19.body"><p>Rothais and Luz give the main task: convince the residents of five settlements to evacuate to the temple. Five quests (order matters — start with the farthest):</p></div>
+</article>
+<!-- evac 1 -->
+<article class="quest reveal" data-qid="s54">
+<div class="q-head"><input class="q-check" data-q="s54" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s54.title">The Importance of Aiding Ernesto</span> <span class="en">The Importance of Aiding Ernesto</span></div><div class="q-meta"><span data-i18n="q.s54.meta.0"><b>Where:</b> Volcanic Island Camp, Ernesto</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s54.body"><p>Convince the volcanic camp residents to evacuate: talk to Ernesto and the key inhabitants (Gaustad, Cliodna, Lamond — everyone you helped). While you are there — kill the local Purgen dragon.</p><div class="reward-line"><b>Reward</b> — 20,000 XP, 40 Wyrmslife Crystal, 15,000 g</div></div>
+</article>
+<!-- evac 2 -->
+<article class="quest reveal" data-qid="s55">
+<div class="q-head"><input class="q-check" data-q="s55" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s55.title">Shepherd of the Pawns</span> <span class="en">Shepherd of the Pawns</span></div><div class="q-meta"><span data-i18n="q.s55.meta.0"><b>Where:</b> Excavation Site, Enrique</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s55.body"><p>The evacuation of the penal mine: help the pawns get out and bring Enrique the Diminished Godsway. This is where you started the game — a pleasing symmetry.</p><div class="reward-line"><b>Reward</b> — 20,000 XP, 30 Wyrmslife Crystal, 15,000 g</div></div>
+</article>
+<!-- evac 3 -->
+<article class="quest reveal" data-qid="s56">
+<div class="q-head"><input class="q-check" data-q="s56" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s56.title">Wandering Roots</span> <span class="en">Wandering Roots</span></div><div class="q-meta"><span data-i18n="q.s56.meta.0"><b>Where:</b> Sacred Arbor, Glindwyr</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-tags"><span class="tag t-miss" data-i18n="q.s56.tag.0">Depends on Arborheart</span></div>
+<div class="q-body" data-i18n="q.s56.body"><p>The elves will leave only together with their sacred Arborheart. If you finished <strong>The Ailing Arborheart</strong> and <strong>Out of the Forest, Into the Forge</strong> — the tree survives the move. If not — the elves perish with it. Talk to Taliesin and organize the departure.</p><div class="reward-line"><b>Reward</b> — 20,000 XP, 30 Wyrmslife Crystal, 25,000 g</div></div>
+</article>
+<!-- evac 4 -->
+<article class="quest reveal" data-qid="s57">
+<div class="q-head"><input class="q-check" data-q="s57" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s57.title">Civil Unrest</span> <span class="en">Civil Unrest</span></div><div class="q-meta"><span data-i18n="q.s57.meta.0"><b>Where:</b> Bakbattahl, Menella</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s57.body"><p>A riot in Bakbattahl: calm the city together with Menella and Nadinia and convince the residents to evacuate. As everywhere — grab the local Purgen dragon on the side.</p><div class="reward-line"><b>Reward</b> — 20,000 XP, 30 Wyrmslife Crystal, 10,000 g</div></div>
+</article>
+<!-- evac 5 -->
+<article class="quest reveal" data-qid="s58">
+<div class="q-head"><input class="q-check" data-q="s58" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s58.title">The Regentkin's Resolve</span> <span class="en">The Regentkin's Resolve</span></div><div class="q-meta"><span data-i18n="q.s58.meta.0"><b>Where:</b> Vernworth, Brant (Stardrop)</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s58.body"><ol class="q-steps"><li>Bring Disa to Sven.</li><li>Intimidate Allard (or deal with him) and take what is needed for the evacuation.</li><li>Organize the capital's move to the temple.</li></ol><div class="reward-line"><b>Reward</b> — 20,000 XP, 35 Wyrmslife Crystal, 25,000 g</div></div>
+</article>
+<!-- m20 scholarly -->
+<article class="quest reveal" data-qid="m20">
+<div class="q-head"><input class="q-check" data-q="m20" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m20.title">A Scholarly Pursuit</span> <span class="en">A Scholarly Pursuit</span></div><div class="q-meta"><span data-i18n="q.m20.meta.0"><b>Type:</b> endgame</span><span data-i18n="q.m20.meta.1"><b>Location:</b> Bakbattahl</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m20.body"><ol class="q-steps"><li>Apply the Godsbane Blade to the red beacon in Bakbattahl.</li><li>Follow Phaesus to the dragonferry vessel.</li><li>Fend off waves of summoned monsters and smash the vessel.</li></ol></div>
+</article>
+<!-- m21 when wills collide -->
+<article class="quest reveal" data-qid="m21">
+<div class="q-head"><input class="q-check" data-q="m21" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.m21.title">When Wills Collide</span> <span class="en">When Wills Collide</span></div><div class="q-meta"><span data-i18n="q.m21.meta.0"><b>Type:</b> finale</span><span data-i18n="q.m21.meta.1"><b>Location:</b> Unmoored World</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.m21.body"><ol class="q-steps"><li>Return to the Giant's resting place — watch the fight with the Purgen dragon.</li><li>Go to the last red beacon at the Seafloor Shrine and apply the Godsbane Blade.</li><li>Dodge the Dragon's attacks — and watch the true finale.</li></ol><div class="q-tip">After the credits <strong>NG+</strong> opens: world, level, gear and pawn carry over; monsters and quests reset. The perfect moment to close what you missed (and with this guide — you missed nothing).</div></div>
+</article>
+<div class="banner reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><path d="M12 3l2.4 5.2L20 9l-4 4 1 5.8L12 16l-5 2.8 1-5.8-4-4 5.6-.8L12 3z" stroke="#c9a227" stroke-width="1.8"></path></svg>
+<div>
+<h4 data-i18n="banners.8.h">Evacuation = achievement</h4>
+<p data-i18n="banners.8.p.0">Saving all settlements awards "The Guardian" trophy. It requires all five evacuations + the trials of the Unmoored World. Sleep only when needed, move in a ring from the far settlements to the near ones — and everyone survives.</p>
+</div>
+</div>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 44 L0 24 L40 14 L90 30 L145 12 L200 28 L255 16 L310 32 L365 10 L420 26 L475 14 L530 28 L585 12 L640 30 L695 16 L750 28 L805 10 L860 26 L915 14 L970 30 L1025 12 L1080 26 L1135 16 L1200 24 L1200 44 Z" fill="#191715"></path></svg>
+<!-- ================= SPHINX ================= -->
+<section class="chapter chapter-dark" id="sphinx">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.sphinx.num">Separate line</div>
+<h2 data-i18n="ch.sphinx.h2">The Sphinx: 10 riddles</h2>
+<p class="lead" data-i18n="ch.sphinx.lead">The quest "A Game of Wits" starts at the Mountain Shrine (north of Checkpoint Rest Town). Main rules: <strong>do not attack the Sphinx</strong> until all riddles are done (she will fly away forever) and place a Portcrystal nearby — you will be doing a lot of running.</p>
+</div>
+<article class="quest reveal" data-qid="s59">
+<div class="q-head"><input class="q-check" data-q="s59" type="checkbox"/><div class="q-titles"><div class="q-title"><span data-i18n="q.s59.title">A Game of Wits</span> <span class="en">A Game of Wits</span></div><div class="q-meta"><span data-i18n="q.s59.meta.0"><b>Where:</b> Mountain Shrine → Frontier Shrine</span><span data-i18n="q.s59.meta.1"><b>Condition:</b> find the Sphinx; the quest disappears after Legacy</span></div></div><div class="q-toggle">+</div></div>
+<div class="q-body" data-i18n="q.s59.body"><p>The first five riddles are at the Mountain Shrine (free order). Then the Sphinx moves to the <strong>Frontier Shrine</strong> — find her there (Reunion riddle) and get four more in random order.</p></div>
+</article>
+<div class="reveal">
+<details class="riddle"><summary><span class="r-num">I</span><span class="r-name" data-i18n="riddle.0.name">Riddle of Eyes</span><span class="r-reward" data-i18n="riddle.0.reward">Reward: Wakestone</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.0.text">"Pass through the door and bring back that which is most precious."</p><p class="r-answer" data-i18n="riddle.0.answer"><b>Answer:</b> in the cave by the shrine there is a chest <b>right above the entrance</b> — take the Sealing Phial from it and give it to the Sphinx. Do not drink the phial and do not drag other chests!</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">II</span><span class="r-name" data-i18n="riddle.1.name">Riddle of Madness</span><span class="r-reward" data-i18n="riddle.1.reward">Reward: Portcrystal</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.1.text">"Bring me the one you love most of all."</p><p class="r-answer" data-i18n="riddle.1.answer"><b>Answer:</b> place on the pedestal the character with maximum affinity. The easiest — <b>your main pawn</b>: hoist them onto your shoulder, set them by the pedestal and talk to the Sphinx. A Portcrystal placed here will help with the remaining riddles.</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">III</span><span class="r-name" data-i18n="riddle.2.name">Riddle of Wisdom</span><span class="r-reward" data-i18n="riddle.2.reward">Reward: 1,200 RC</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.2.text">"I am a lost child. Bring me my parent."</p><p class="r-answer" data-i18n="riddle.2.answer"><b>Answer:</b> hire a pawn in the Rift nicknamed <b>SphinxParent / SphinxMother / SphinxFather</b> (search at the Riftstone of Fellowship — e.g. near Harve or behind the Ancient Battleground; check the creator — Capcom). Bring them to the Sphinx.</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">IV</span><span class="r-name" data-i18n="riddle.3.name">Riddle of Conviction</span><span class="r-reward" data-i18n="riddle.3.reward">Reward: duplicate of the item</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.3.text">"Give me that which you value most."</p><p class="r-answer" data-i18n="riddle.3.answer"><b>Answer:</b> any item works — the Sphinx returns <b>its copy</b>. Give something rare and expensive: the best choice is a Portcrystal.</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">V</span><span class="r-name" data-i18n="riddle.4.name">Riddle of Rumination</span><span class="r-reward" data-i18n="riddle.4.reward">Reward: 3 Ferrystones</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.4.text">"Where did you find your first Seeker's Token?"</p><p class="r-answer" data-i18n="riddle.4.answer"><b>Answer:</b> return to where you picked up your very first Seeker's Token at the start of the game — a <b>Finder's Token</b> appears at that spot. You have 7 in-game days. Don't remember the place? Recall: for most it is the nest on the hill near Melve or the Borderwatch surroundings.</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">VI</span><span class="r-name" data-i18n="riddle.5.name">Riddle of Reunion</span><span class="r-reward" data-i18n="riddle.5.reward">Reward: 100,000 g</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.5.text">"Seek me in my new abode."</p><p class="r-answer" data-i18n="riddle.5.answer"><b>Answer:</b> simply find the Sphinx at the <b>Frontier Shrine</b> (north-west of Checkpoint Rest Town) and talk to her.</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">VII</span><span class="r-name" data-i18n="riddle.6.name">Riddle of Contest</span><span class="r-reward" data-i18n="riddle.6.reward">Reward: Ring of Ambition</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.6.text">A duel, but with the Ring of Derision — your damage is nearly zero.</p><p class="r-answer" data-i18n="riddle.6.answer"><b>Answer:</b> knock the opponent off balance, <b>pick them up and throw them off the cliff</b> behind the columns. Remove the ring after the fight! The Ambition ring speeds up XP gain.</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">VIII</span><span class="r-name" data-i18n="riddle.7.name">Riddle of Differentiation</span><span class="r-reward" data-i18n="riddle.7.reward">Reward: Whimsical Daydream</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.7.text">"I seek this person" (a portrait).</p><p class="r-answer" data-i18n="riddle.7.answer"><b>Answer:</b> this is <b>Dante or Vergil</b> — two nearly identical NPCs in Checkpoint Rest Town. Dante: straight hair and an even scar (at the entrance, Vermund side); Vergil: wavy hair and a jagged scar (behind the gates, Battahl side). Check History → NPC Logbook, hoist the right one and teleport to the Sphinx.</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">IX</span><span class="r-name" data-i18n="riddle.8.name">Riddle of Futility</span><span class="r-reward" data-i18n="riddle.8.reward">Reward: Eternal Bond</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.8.text">"Deliver a fragile amphora to Sir Maurits in Bakbattahl." It breaks from any hit; teleporting is forbidden.</p><p class="r-answer" data-i18n="riddle.8.answer"><b>Answer:</b> the trick — deliver not the amphora to Maurits, but <b>Maurits to the amphora</b>: find him at the Mural Byway in Bakbattahl, grab him and teleport to the Portcrystal at the shrine, then place him next to the amphora (not on it!). The Eternal Bond ring sharply boosts affinity with any NPC.</p></div>
+</details>
+<details class="riddle"><summary><span class="r-num">X</span><span class="r-name" data-i18n="riddle.9.name">Riddle of Memory</span><span class="r-reward" data-i18n="riddle.9.reward">Reward: Unmaking Arrow</span></summary>
+<div class="r-body"><p class="r-text" data-i18n="riddle.9.text">"How many riddles have you already solved? Show me with statues."</p><p class="r-answer" data-i18n="riddle.9.answer"><b>Answer:</b> carry exactly as many statues to the pedestal as riddles you have solved correctly (usually 9, if this is the last one). The Reunion riddle counts too.</p></div>
+</details>
+</div>
+<div class="banner danger reveal">
+<svg class="b-icon" fill="none" viewbox="0 0 24 24"><path d="M12 2L1 21h22L12 2z" stroke="#d96a4e" stroke-width="2"></path><path d="M12 9v5" stroke="#d96a4e" stroke-width="2"></path><circle cx="12" cy="17.5" fill="#d96a4e" r="1.3"></circle></svg>
+<div>
+<h4 data-i18n="banners.9.h">End of the line</h4>
+<p data-i18n="banners.9.p.0">After the 10th riddle, attack the Sphinx and shoot her with the <strong>Unmaking Arrow</strong>: one shot = auto-save, you cannot miss! Take the <strong>Key of Sagacity</strong> from her body and open the big chest: inside is the <strong>Eternal Wakestone</strong> — mass NPC revival, the best cure for the Dragonsplague. A normal fight is pointless: at low health she flies away forever.</p>
+</div>
+</div>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 0 L1200 0 L1200 20 L1145 30 L1090 14 L1035 28 L980 10 L925 26 L870 16 L815 30 L760 12 L705 26 L650 14 L595 28 L540 10 L485 24 L430 16 L375 28 L320 12 L265 26 L210 14 L155 28 L100 10 L45 24 L0 18 Z" fill="#191715"></path></svg>
+<!-- ================= VOCATIONS ================= -->
+<section class="chapter" id="vocations">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.vocations.num">Reference</div>
+<h2 data-i18n="ch.vocations.h2">Vocations &amp; masters</h2>
+<p class="lead" data-i18n="ch.vocations.lead">Ten vocations: four starter, two handed out almost immediately, four hidden in the world. Do not head into the finale without collecting them all.</p>
+</div>
+<div class="tbl-wrap reveal">
+<table>
+<thead><tr><th data-i18n="tbl.2.h.0">Vocation</th><th data-i18n="tbl.2.h.1">How to unlock</th><th data-i18n="tbl.2.h.2">When</th></tr></thead>
+<tbody>
+<tr><td data-i18n="tbl.2.r.0.0"><b>Fighter / Archer / Thief / Mage</b></td><td data-i18n="tbl.2.r.0.1">Starting vocations</td><td data-i18n="tbl.2.r.0.2">Character creation</td></tr>
+<tr><td data-i18n="tbl.2.r.1.0"><b>Warrior / Sorcerer</b></td><td data-i18n="tbl.2.r.1.1">Vocation Frustration: bring a greatsword and an archistaff from Trevo Mine (or simply find such weapons)</td><td data-i18n="tbl.2.r.1.2">Act II</td></tr>
+<tr><td data-i18n="tbl.2.r.2.0"><b>Mystic Spearhand</b></td><td data-i18n="tbl.2.r.2.1">Talk to Sigurd during Readvent of Calamity in Melve (do not kill the dragon first!) or at Dragonsbreath Tower</td><td data-i18n="tbl.2.r.2.2">Acts II–III</td></tr>
+<tr><td data-i18n="tbl.2.r.3.0"><b>Trickster</b></td><td data-i18n="tbl.2.r.3.1">Talk to the oracle Luz at the Reverent Shrine (quest Flickering Shadows)</td><td data-i18n="tbl.2.r.3.2">Act III</td></tr>
+<tr><td data-i18n="tbl.2.r.4.0"><b>Magick Archer</b></td><td data-i18n="tbl.2.r.4.1">Put a Spring in Thy Step: herbs → Gaustad → escort to the hot springs → Cliodna</td><td data-i18n="tbl.2.r.4.2">Act III</td></tr>
+<tr><td data-i18n="tbl.2.r.5.0"><b>Warfarer</b></td><td data-i18n="tbl.2.r.5.1">The Sotted Sage: 3 bottles of Newt Liqueur for Lamond at the Volcanic Island Camp</td><td data-i18n="tbl.2.r.5.2">Act III</td></tr>
+</tbody>
+</table>
+</div>
+<div class="q-tip reveal" data-i18n="sec.vocations.tip.0"><b>Quest masteries:</b> Heavenly Shot (Taliesin, A Trial of Archery) · Meteoron (Trisha, Spellbound) · Celestial Paean (Eini, Spellbound) · Maelstrom (Myrddin, The Sorcerer's Appraisal) · Martyr's Bolt (Cliodna, Put a Spring in Thy Step) · Rearmament (Lamond, The Sotted Sage). The Warfarer class wields any weapon and combines skills — ideal for the endgame.</div>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 44 L0 16 L45 28 L100 10 L155 26 L210 14 L265 30 L320 12 L375 26 L430 16 L485 30 L540 10 L595 24 L650 14 L705 28 L760 12 L815 26 L870 16 L925 30 L980 12 L1035 24 L1090 14 L1145 26 L1200 18 L1200 44 Z" fill="#191715"></path></svg>
+<!-- ================= ROMANCE ================= -->
+<section class="chapter chapter-dark" id="romance">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.romance.num">Reference</div>
+<h2 data-i18n="ch.romance.h2">Romance &amp; affinity</h2>
+<p class="lead" data-i18n="ch.romance.lead">Two full romance routes — both are easy to lose. Both rewards are story-related, not checkboxes: close them in time.</p>
+</div>
+<div class="tbl-wrap reveal">
+<table>
+<thead><tr><th data-i18n="tbl.3.h.0">Character</th><th data-i18n="tbl.3.h.1">Chain</th><th data-i18n="tbl.3.h.2">Critical conditions</th></tr></thead>
+<tbody>
+<tr>
+<td data-i18n="tbl.3.r.0.0"><b>Ulrika</b></td>
+<td data-i18n="tbl.3.r.0.1">Readvent of Calamity → scene at her house → Trouble on the Cape → Home Is Where the Hearth Is</td>
+<td data-i18n="tbl.3.r.0.2">Do not ignore the dragon attack on Melve; do not drag out the gaps between stages; close the whole chain before the end of the game</td>
+</tr>
+<tr>
+<td data-i18n="tbl.3.r.1.0"><b>Wilhelmina</b></td>
+<td data-i18n="tbl.3.r.1.1">Meeting in The Stolen Throne / An Unsettling Encounter → maximum affinity (bouquets) → Every Rose Has Its Thorn</td>
+<td data-i18n="tbl.3.r.1.2">The quest has a 3-day timer; take it right after Feast of Deception; a house in Vernworth (20,000 g) unlocks her letter and the final scene</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="q-tip reveal" data-i18n="sec.romance.tip.0"><b>Affinity:</b> grows from quests and gifts (almost everyone loves bouquets). A character at maximum affinity is handy for the Sphinx's Riddle of Madness, and the <b>Eternal Bond</b> ring (Riddle of Futility) instantly strengthens relations with any NPC.</div>
+</section>
+<svg aria-hidden="true" class="torn" preserveaspectratio="none" viewbox="0 0 1200 44"><path d="M0 0 L1200 0 L1200 18 L1140 28 L1085 12 L1030 26 L975 14 L920 30 L865 10 L810 26 L755 16 L700 28 L645 12 L590 26 L535 14 L480 28 L425 10 L370 24 L315 16 L260 30 L205 12 L150 26 L95 14 L40 26 L0 16 Z" fill="#191715"></path></svg>
+<!-- ================= CHECKLIST ================= -->
+<section class="chapter chapter-green" id="checklist">
+<div class="chapter-head reveal">
+<div class="chapter-num" data-i18n="ch.checklist.num">Final check</div>
+<h2 data-i18n="ch.checklist.h2">100% checklist</h2>
+<p class="lead" data-i18n="ch.checklist.lead">Marks are synced with the quest cards above and stored in your browser. Everything checked off? You can face the Dragon with a clear conscience.</p>
+</div>
+<div class="reveal">
+<div class="check-h" data-i18n="check.h.0">Main story</div>
+<div class="check-columns" id="clMain"></div>
+<div class="check-h" data-i18n="check.h.1">Act I · Borderlands &amp; Melve</div>
+<div class="check-columns" id="clA1"></div>
+<div class="check-h" data-i18n="check.h.2">Act II · Vernworth &amp; Ulrika route</div>
+<div class="check-columns" id="clA2"></div>
+<div class="check-h" data-i18n="check.h.3">Act III · Battahl, island &amp; elves</div>
+<div class="check-columns" id="clA3"></div>
+<div class="check-h" data-i18n="check.h.4">Acts IV–V · Finale &amp; Unmoored World</div>
+<div class="check-columns" id="clA5"></div>
+<div class="check-h" data-i18n="check.h.5">Separate lines</div>
+<div class="check-columns" id="clExtra"></div>
+</div>
+</section>
+<footer>
+<div class="f-title" data-i18n="footer.title">Dragon's Dogma II · Walkthrough</div>
+<p data-i18n="footer.p.0">Compiled from open community guides (IGN, Polygon, PowerPyx, Fextralife wiki, Game8) and cross-checked against several sources. Quest names are given in localized form with the original English — search by the English name if your localization differs. Checklist progress is stored only in this browser.</p>
+<p data-i18n="footer.p.1" style="margin-top:10px">May the Rift watch over you, Arisen.</p>
+</footer>
+</main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

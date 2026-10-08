@@ -63,3 +63,18 @@
 open index.html      # macOS
 xdg-open index.html  # Linux
 start index.html     # Windows
+
+
+---
+
+## 🌐 Мультиязычность
+
+Гайд переведён на 9 языков: English, Русский, Deutsch, Français, Español, Português (BR), 日本語, 简体中文, 한국ю. Переключатель — в сайдбаре; выбор и прогресс чек-листа хранятся в localStorage. Структура: английский текст в `index.html` + словари `i18n/*.json` (ключи `data-i18n`). Новый язык = один JSON + строка в `LANGS` в `app.js`.
+
+**Важно:** из-за ограничений браузеров открывать `index.html` двойным кликом (file://) нельзя — JSON не загрузятся. Запускайте локальный сервер:
+
+```bash
+python -m http.server
+```
+
+или разместите папку на любом статическом хостинге (GitHub Pages и т.п.).
