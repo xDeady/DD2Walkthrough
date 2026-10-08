@@ -10,8 +10,13 @@
 [![No Dependencies](https://img.shields.io/badge/dependencies-none-success?style=flat-square)](#-tech-stack)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
+[![Live Demo](https://img.shields.io/badge/live-demo-brightgreen?style=flat-square&logo=github)](https://xdeady.github.io/DD2Walkthrough/)
+[![Languages](https://img.shields.io/badge/languages-9-informational?style=flat-square)](#-localization)
+
 [![English](https://img.shields.io/badge/lang-English-blue?style=flat-square)](README.md)
 [![Русский](https://img.shields.io/badge/lang-Русский-red?style=flat-square)](README.ru.md)
+
+### ▶ [**Open the live guide →**](https://xdeady.github.io/DD2Walkthrough/)
 
 </div>
 
@@ -22,6 +27,8 @@
 A complete, no-miss walkthrough for **Dragon's Dogma 2** — from awakening in the mine to the Unmoored World and NG+. Built as a single static HTML file with no build step, no frameworks, and no backend.
 
 > 🎯 Goal: **you never miss a single line of content.**
+
+**Live version:** https://xdeady.github.io/DD2Walkthrough/
 
 ---
 
@@ -39,6 +46,7 @@ A complete, no-miss walkthrough for **Dragon's Dogma 2** — from awakening in t
 | 🧩 | **10 Sphinx riddles** — with answers and the Unmaking Arrow warning |
 | ✅ | **Interactive 100% checklist** — progress saved in browser `localStorage` |
 | 📱 | **Responsive UI** — sidebar with scroll-spy, mobile menu, dark fantasy theme |
+| 🌐 | **9 languages** — English, Русский, Deutsch, Français, Español, Português (BR), 日本語, 简体中文, 한국어 |
 
 ---
 
@@ -55,60 +63,26 @@ A pure static site — **no build step, no dependencies, no backend.**
 
 ## 🚀 Getting Started
 
+### Use the live version
+
+Just open:
+
+**https://xdeady.github.io/DD2Walkthrough/**
+
+No installation, no setup — the guide works in any modern browser and remembers your checklist progress and language choice locally.
+
 ### Run locally
 
-Just open the file in your browser:
+The project uses `fetch()` to load translation dictionaries, so opening `index.html` by double-clicking (`file://`) **will not work** — browsers block `fetch` on the file protocol and the dictionaries won't load. Serve the folder over HTTP instead:
 
 ```bash
-open index.html      # macOS
-xdg-open index.html  # Linux
-start index.html     # Windows
+# Python 3 (built-in)
+python3 -m http.server 8000
+# → http://localhost:8000
 
-### Publishing (GitHub Pages)
-
-The repository must be public. Then:
-
-1. **Settings → Pages → Source**: pick the `main` branch and the `/ (root)` folder, save.
-2. In 1–2 minutes the site will be live at:
-
-```
-https://<username>.github.io/<repo>/
-```
-
-3. Add the link to the repository **About** section and to the README header (badge or a "Live" line).
-
-The site is fully static — no build step, no backend; Pages serves the files as they are.
-
----
-
-## 🌐 Localization
-
-The guide is translated into 9 languages: **English, Русский, Deutsch, Français, Español, Português (BR), 日本語, 简体中文, 한국어**. The switcher sits in the sidebar above the progress bar: the site auto-detects the browser language on first visit and remembers the choice in `localStorage`. Checklist progress is shared across languages.
-
-### How it works
-
-- The English text lives in `index.html`; every text node carries a `data-i18n` key;
-- translations live in `i18n/*.json` (ru, de, fr, es, pt-BR, ja, zh-CN, ko) and are loaded via `fetch`;
-- on startup `app.js` loads `en.json` first (fallback), then the selected language, and rewrites every `[data-i18n]` node;
-- the checklist at the bottom of the page rebuilds itself in the current language on the fly.
-
-### Adding a language
-
-1. Create `i18n/xx.json` (copy `en.json` and translate the values; don't touch the keys);
-2. add one line to `LANGS` in `app.js`:
-
-```javascript
-{ code:'xx', label:'Language name' }
-```
-
-That's it. You can verify dictionary completeness by diffing the key set against `en.json`.
-
-### Note about file://
-
-Don't open `index.html` by double-clicking (`file://`) — browsers block `fetch` there, so the dictionaries won't load. Serve the folder locally instead:
-
-```bash
-python -m http.server        # http://localhost:8000
-# or
+# Node.js
 npx serve
-```
+# → http://localhost:3000
+
+# PHP (built-in)
+php -S localhost:8000
