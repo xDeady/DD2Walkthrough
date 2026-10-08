@@ -1,46 +1,64 @@
-**English** | [Русский](README.ru.md)
+<div align="center">
 
-Dragon's Dogma 2 — Full Walkthrough
+# 🐉 Dragon's Dogma 2 — Full Walkthrough
 
-A static single-page guide for Dragon's Dogma 2: a complete, no-miss walkthrough — every main and side quest in order, branching paths, timers, points of no return, the Sphinx riddles, and a 100% checklist.
-✨ Features
+**A static single-page guide for Dragon's Dogma 2 — every quest, every branch, every timer, zero missables.**
 
-    Full act-by-act walkthrough — from awakening in the mine to the Unmoored World and NG+.
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![No Dependencies](https://img.shields.io/badge/dependencies-none-success?style=flat-square)](#-tech-stack)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
-    Every quest in order: 24 main + 60 side quests, with locations, conditions, and rewards.
+[English](README.md) · [Русский](README.ru.md)
 
-    Tags and warnings:
+</div>
 
-        ⏳ Timer — quests with a hidden deadline;
+---
 
-        ⚠️ Point of no return — moments after which content is lost;
+## 📖 About
 
-        🔀 Branch — all choices and their consequences;
+A complete, no-miss walkthrough for **Dragon's Dogma 2** — from awakening in the mine to the Unmoored World and NG+. Built as a single static HTML file with no build step, no frameworks, and no backend.
 
-        💜 Romance — Ulrika and Wilhelmina routes;
+> 🎯 Goal: **you never miss a single line of content.**
 
-        🎭 Vocation — where master skills and vocations unlock.
+---
 
-    "Missable content" section — a summary table of everything that's easy to lose forever.
+## ✨ Features
 
-    10 Sphinx riddles with answers and a warning about the Unmaking Arrow.
+| | Feature |
+|---|---|
+| 📜 | **Full act-by-act walkthrough** — from the mine to NG+ |
+| 🗺️ | **Every quest in order** — 24 main + 60 side quests with locations, conditions, and rewards |
+| ⏳ | **Timer warnings** — quests with hidden deadlines |
+| ⚠️ | **Points of no return** — moments after which content is lost forever |
+| 🔀 | **All branching paths** — every choice and its consequences |
+| 💜 | **Romance routes** — Ulrika and Wilhelmina |
+| 🎭 | **Vocation unlocks** — where master skills and classes become available |
+| 🧩 | **10 Sphinx riddles** — with answers and the Unmaking Arrow warning |
+| ✅ | **Interactive 100% checklist** — progress saved in browser `localStorage` |
+| 📱 | **Responsive UI** — sidebar with scroll-spy, mobile menu, dark fantasy theme |
 
-    Reference guides: vocations & masters, romance & affinity.
+---
 
-    Interactive 100% checklist — progress is saved in the browser's localStorage.
+## 🛠 Tech Stack
 
-    Responsive UI: sidebar navigation with scroll-spy, mobile menu, dark "fantasy" theme, reveal animations.
+A pure static site — **no build step, no dependencies, no backend.**
 
-🛠 Tech Stack
+- **HTML5** — semantic markup, inline SVG illustrations
+- **CSS3** — custom properties, Grid/Flexbox, `position: sticky`, responsive media queries
+- **Vanilla JavaScript** — checklists, progress bar, `localStorage`, `IntersectionObserver` (scroll-spy + reveal animations)
+- **Google Fonts** — Cormorant SC, Cormorant Garamond, EB Garamond
 
-A pure static site with no build step and no dependencies:
+---
 
-    HTML5 — semantic markup, inline SVG illustrations.
+## 🚀 Getting Started
 
-    CSS3 — custom properties, Grid/Flexbox, position: sticky, responsive media queries.
+### Run locally
 
-    Vanilla JavaScript — checklists, progress bar, localStorage, IntersectionObserver (scroll-spy and reveal animations).
+Just open the file in your browser:
 
-    Google Fonts — Cormorant SC, Cormorant Garamond, EB Garamond.
-
-No frameworks, no bundlers, no backend — just open index.html.
+```bash
+open index.html      # macOS
+xdg-open index.html  # Linux
+start index.html     # Windows
