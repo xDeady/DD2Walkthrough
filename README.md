@@ -64,17 +64,51 @@ open index.html      # macOS
 xdg-open index.html  # Linux
 start index.html     # Windows
 
+### Publishing (GitHub Pages)
+
+The repository must be public. Then:
+
+1. **Settings → Pages → Source**: pick the `main` branch and the `/ (root)` folder, save.
+2. In 1–2 minutes the site will be live at:
+
+```
+https://<username>.github.io/<repo>/
+```
+
+3. Add the link to the repository **About** section and to the README header (badge or a "Live" line).
+
+The site is fully static — no build step, no backend; Pages serves the files as they are.
 
 ---
 
-## 🌐 Мультиязычность
+## 🌐 Localization
 
-Гайд переведён на 9 языков: English, Russian, Deutsch, Français, Español, Português (BR), 日本語, 简体中文, 한국ю. Переключатель — в сайдбаре; выбор и прогресс checklist хранятся в localStorage. Структура: английский текст в `index.html` + словари `i18n/*.json` (ключи `data-i18n`). Новый язык = один JSON + строка в `LANGS` в `app.js`.
+The guide is translated into 9 languages: **English, Русский, Deutsch, Français, Español, Português (BR), 日本語, 简体中文, 한국어**. The switcher sits in the sidebar above the progress bar: the site auto-detects the browser language on first visit and remembers the choice in `localStorage`. Checklist progress is shared across languages.
 
-**Important:** due to browser restrictions, opening `index.html` by double-clicking (file://) will not load the JSON. Run a local server:
+### How it works
 
-```bash
-python -m http.server
+- The English text lives in `index.html`; every text node carries a `data-i18n` key;
+- translations live in `i18n/*.json` (ru, de, fr, es, pt-BR, ja, zh-CN, ko) and are loaded via `fetch`;
+- on startup `app.js` loads `en.json` first (fallback), then the selected language, and rewrites every `[data-i18n]` node;
+- the checklist at the bottom of the page rebuilds itself in the current language on the fly.
+
+### Adding a language
+
+1. Create `i18n/xx.json` (copy `en.json` and translate the values; don't touch the keys);
+2. add one line to `LANGS` in `app.js`:
+
+```javascript
+{ code:'xx', label:'Language name' }
 ```
 
-or host the folder on any static host (GitHub Pages etc.).
+That's it. You can verify dictionary completeness by diffing the key set against `en.json`.
+
+### Note about file://
+
+Don't open `index.html` by double-clicking (`file://`) — browsers block `fetch` there, so the dictionaries won't load. Serve the folder locally instead:
+
+```bash
+python -m http.server        # http://localhost:8000
+# or
+npx serve
+```
