@@ -28,8 +28,6 @@ A complete, no-miss walkthrough for **Dragon's Dogma 2** — from awakening in t
 
 > 🎯 Goal: **you never miss a single line of content.**
 
-**Live version:** https://xdeady.github.io/DD2Walkthrough/
-
 ---
 
 ## ✨ Features
